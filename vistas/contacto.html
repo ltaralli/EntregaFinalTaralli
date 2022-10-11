@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;500&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <figure class="header__figure">
+                <a class="header__BtnImg" href="../index.html" ><img class="header__logo" src="../img/Logo.png" alt="Nuestro Logo" cla></a>
+            </figure>
+            <ul class="header__list">
+                <li class="header__item" ><a href="#" class="header__anchor">Contactanos</a></li>
+                <li class="header__item"><a href="./nosotros.html" class="header__anchor">Quienes Somos</a></li>
+                <li class="header__item"><a href="./productos.html" class="header__anchor">Productos</a></li>
+                <li class="header__item"><a href="./faq.html" class="header__anchor">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </div>    
+</header>
+
+<main>
+        <section class="heroC" data-aos="zoom-out">
+                <h1 class="heroC__titulo" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">¡CONCACTANOS!</h1>
+                <p class="heroC__slogan" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">En breve te escribimos</p>
+        </section>
+
+    <hr>
+    <form class="form" action="" method="get" enctype="text/plain">
+        <div class="formcard" data-aos="fade-up"
+        data-aos-duration="1000">
+            <legend class="fieldset__legend">Completá tus datos!</legend>
+                <div class="fieldset__campos">
+                    <div class="fieldset__nombre">
+                        <label class="fieldset__label" for="name">Nombre y Apellido</label>
+                        <input class="fieldset__imput" type="text" name="name" id="name" required placeholder="Introduzca su nombre">
+                    </div>
+                    <div class="fieldset__email">
+                        <label class="fieldset__label" for="email">Correo Electrónico</label>
+                        <input class="fieldset__imput" type="email" name="email" id="email" required placeholder="Introduzca su correo">
+                    </div>
+                    <div class="fieldset__phone">
+                        <label class="fieldset__label" for="phone">Teléfono</label>
+                        <input class="fieldset__imput" type="phone" name="phone" id="phone" required placeholder="Introduzca su teléfono">
+                    </div>
+                    <div class="fieldset__age">
+                        <label class="fieldset__label" for="age">Edad</label>
+                        <input class="fieldset__imput" type="number" name="age" id="age"
+                        required placeholder="Introduzca su edad">
+                    </div>
+                    <div class="fieldset__date">
+                        <label class="fieldset__label" for="date">Fecha de Nacimiento</label>
+                        <input class="fieldset__imput" type="date" name="date" id="date" min="2017-01-01" required placeholder="Introduzca su fecha de nacimiento">
+                    </div>
+                    <input class="fieldset__btn" type="reset" value="Limpiar Formulario">
+                    <input class="fieldset__btn" type="submit" value="Enviar Formulario">
+                    </div>
+                </div>
+    </form>
+
+</main>
+<footer class="footer">
+    <nav class="footer__nav">
+        <div class="footer__medios">
+            <img src="../img/visa.png" alt="Logo Visa" class="footer__logosmedios">
+            <img src="../img/mastercard.png" alt="Logo Mastercard" class="footer__logosmedios">
+            <img src="../img/amex.png" alt="Logo Amex" class="footer__logosmedios">
+            <img src="../img/bank.png" alt="Logo Bank" class="footer__logosmedios">
+        </div>
+        <div class="footer__copyLocation">
+            <div class="footer__location">   
+                <img class="footer__logoLocation" src="../img/logo_location.png" alt="Logo location">
+                <p  class="footer__txt footer__txt-2">Victoria, Entre Rios</p>
+            </div>
+            <p  class="footer__txt">&copy; Lisandro Taralli</p>
+        </div>
+        </div>
+        <ul class="footer__ul">
+            <li class="footer__li"><a class="footer__anchor" href="#">Contactanos</a></li>
+            <li class="footer__li"><a class="footer__anchor" href="./nosotros.html">Quienes Somos</a></li>
+            <li class="footer__li"><a class="footer__anchor" href="./productos.html">Productos</a></li>
+            <li class="footer__li"><a class="footer__anchor" href="./faq.html">Preguntas Frecuentes</a></li>
+         </ul>
+    </nav>
+</footer>
+
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>

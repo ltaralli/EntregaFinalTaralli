@@ -1,0 +1,959 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+    /* ---- HOME ---- */
+
+/* HEADER */
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.header__anchor{
+    font-size: 1em;
+    padding: 0.5rem 0rem;
+    margin: 0rem .5rem;
+    border-bottom: black solid 2px;
+}
+
+.header__anchor:hover{
+    color: rgb(252, 140, 158);
+    border-bottom: rgb(252, 140, 158) solid 2px;
+}
+
+.header__logo {
+    width: 110px;
+    transition: all .3s ease-in-out;
+}
+
+img.header__logo:hover {
+    width: 125px;
+}
+
+.header__figure {
+    margin: .5rem;
+}
+
+.header__item {
+    display: inline-block;
+
+}
+
+
+/* FIN HEADER */
+
+/* FONTS */
+.contactoHome__btn, .info__btn, .infocard__btn, .hero__btn, .header__anchor, .footer__anchor, .footer__nombre, .footer__ciudad{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+/* FIN FONTS */
+
+/* HERO HOME*/
+
+.hero {
+    background-image: url(../img/heroHome.jpg);
+    color: white;
+    height: 91vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__titulo, .hero__slogan{
+    text-align: center;
+    margin: .5rem auto  ;
+    text-shadow: 2px 2px black;
+}
+
+.hero__slogan{
+    font-size: 2em;
+}
+
+.hero__titulo{
+    font-size: 4em;
+}
+
+.hero__btn {
+    padding: 1rem 0.2rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin: 1rem;
+    width: 250px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.hero__btn:hover, .contactoHome__btn:hover {
+    background: pink;
+    color: black;
+    transition: all .5s ease;
+}
+
+
+
+/* FIN HERO HOME*/
+
+/* INFOCARD */
+
+.info{
+    background-color: white;
+ }
+    
+ .info__titular {
+    padding: 3rem 2rem 2rem 2rem;
+    text-align: center;
+    background-color: #f8fafa;
+    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    FONT-SIZE: 3.5em;
+}
+
+.tarjetasHome {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 80px;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.infocard {
+    background-color: #f8fafa;
+    padding: 1rem;
+    margin: 2rem 4rem;
+    border-radius: 30px;
+    box-shadow: 0 0 13px 0 rgb(185, 185, 185, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infocard_img {
+    border-radius: 30px;
+    height: 60%;
+    width: 90%;
+    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+}
+
+.infocard__titulo {
+    padding: 1rem;
+    font-size: 2rem; 
+    text-align: center;  
+}
+
+.infocard__desc {
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.infocard__btn {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background-color: pink;
+    text-align: center;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+}
+
+.info__btnDiv {
+    align-self: start;
+    grid-column: 3 / 2;
+}
+
+.info__btn {
+    padding: 1rem;
+    background-color: pink;
+    border-radius: 20px;
+    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+}
+
+
+.info__btn:hover, .infocard__btn:hover{
+    background-color: white;
+    transition: all .5s ease;
+}
+
+.hero__titulo, .infocard__titulo, .info__titulo, .contactoHome__titulo, .fieldset__legend, .heroC__titulo{   
+    font-family: 'Marcellus', serif;
+}
+
+.hero__slogan, .infocard__desc, .contactoHome__desc, .heroC__slogan{
+    font-family: 'Assistant', sans-serif;
+}
+
+/* FIN INFOCARD */
+
+/* CONTACTO HOME*/
+
+.contactoHome{
+    background-color: #7C5869;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoHome__titulo{
+    font-size: 4em;
+}
+
+.contactoHome__desc{
+    font-size: 1.3em;
+}
+.contactoHome__titulo, .contactoHome__desc{
+    text-align: center;
+    margin: 1rem auto  ;
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 1px 0 #000000;
+    
+}
+
+.contactoHome__btn {
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    bottom: 0;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+/* FIN CONTACTO HOME*/
+
+/* FOOTER*/
+
+.footer__nav {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__medios {
+    margin: 1rem;
+}
+
+img.footer__logosmedios {
+    width: 60px;
+    margin: 3px;
+}
+
+.footer__copyLocation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logoLocation {
+    display: inline-block;
+    width: 1.3rem;
+    height: 2rem;
+    margin: -0.5rem 0;
+    filter: invert(100%);
+}
+
+
+.footer__txt{
+ color: white;
+ padding: .5rem ;
+}
+
+.footer__txt-2{
+    display: inline-block;
+    margin: 1.5rem 0;
+}
+
+.footer__anchor{
+    color: white;
+    padding: 1rem 0.5rem;
+}
+
+a.footer__anchor:hover {
+    color: rgb(252, 140, 158);
+}
+
+.footer__li{
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* FIN FOOTER*/
+
+    /* ---- FIN HOME ---- */
+
+
+    /* ---- CONTACTO ---- */
+
+/* HERO CONTACTO */
+.heroC  {
+    background-image: url(../img/hero_contacto.jpg);
+    color: white;
+    height: 91vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroC__titulo, .heroC__slogan{
+    text-align: center;
+    margin: .5rem auto  ;
+    text-shadow: 2px 2px black;
+}
+
+.heroC__slogan{
+    font-size: 1.5rem;
+    border-bottom: white solid 3px;
+    padding-bottom: 1rem;
+    box-shadow: 0px 2px black;
+
+}
+
+.heroC__titulo{
+    font-size: 5rem;
+}
+
+/* FIN HERO CONTACTO */ 
+
+
+/* FIELDSET*/ 
+
+.form {
+    background-color: #ecf1f4;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.5rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcard {
+    background-color: white;
+    height: 30rem;
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+}
+
+.fieldset__legend {
+    text-align: center;
+    width: 80rem;
+    background-color: #ecf1f4;
+    border-radius: 35px 35px 0px 0px;
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+}
+
+.fieldset__label {
+    padding: 0.5rem;
+    margin: 0.5px;
+    display: inline-block;
+    text-shadow: 0px 1px 0px black;
+}
+
+.fieldset__imput {
+    border-radius: 15px;
+    height: 2rem;
+    width: 27rem;
+    float: right;
+    margin: 0.309rem 2rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 1px 0px rgb(0 0 0 / 75%);
+}
+
+
+.fieldset__btn {
+    display: inline-block;
+    padding: .7rem 0.5rem;
+    margin: 2rem;
+    background-color: #2F2963;
+    text-align: center;
+    border-radius: 1.5rem;
+    color: white;
+    width: 20rem;
+    font-size: 1.2rem;
+}
+/* FIN FIELDSET*/
+
+    /* ---- FIN CONTACTO ---- */
+
+    /* ----- NOSOTROS ------- */
+
+.heroN__titulo, .nosotroscard__titulo{
+    font-family: 'Assistant', sans-serif;
+}
+
+.heroN__slogan, .nosotroscard__desc{
+    font-family: 'Marcellus', serif;
+
+}
+
+/* HERO NOSOTROS */
+.heroN {
+    background-image: url(../img/background_nosotros.png);
+    background-repeat: no-repeat;
+    color: white;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroN__txt {
+    margin: 3rem;
+}
+
+.heroN__titulo{
+    font-size: 6rem;
+}
+
+.heroN__titulo, .heroN__slogan {
+    margin: 1rem;
+    text-shadow: 2px 2px black;
+}
+
+.heroN__slogan {
+    font-size: 1.3rem;
+    text-align: initial;
+}
+
+.heroN__div {
+    border-radius: 50px;
+    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+}
+
+
+.heroN__img {
+    margin: 3rem;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 40px;
+}
+/* FIN HERO NOSOTROS */ 
+
+/* NOSOTROS CARD */
+
+#mivideo {  
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;   
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);  
+    z-index: -100;
+    background-size: cover;
+  }
+
+
+  .nosotroscard1, .nosotroscard2, .nosotroscard3 {
+    background-color: white;
+    height: 35vh;
+    width: 50%;
+    border-radius: 30px;
+    margin: 4rem;
+    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nosotroscard2{
+    float: right;
+}
+
+.nosotroscard__titulo, .nosotroscard__desc {
+    /* display: inline-block; */
+    /* position: absolute; */
+    text-align: center;
+    /* width: 25rem; */
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.nosotroscard__img {
+    width: 40%;
+    height: 100%;
+    border-radius: 25px 0px 0px 25px;
+}
+
+h2.nosotroscard__titulo {
+    font-size: 2.5rem;
+}
+p.nosotroscard__desc {
+    font-size: 1.3rem;
+}
+
+/* FIN NOSOTROS CARD */ 
+
+
+
+    /* ---- PRODUCTOS ----*/
+
+/* HERO PRODUCTOS */
+
+.heroP{
+    background-image: url(../img/hero_productos.jpg);
+    color:white;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heroP__titulo{
+    font-size: 4rem;
+    font-family: 'Assistant', sans-serif;
+    
+}
+
+.heroP__titulo, .heroP__slogan{
+    text-align: center;
+    margin: 1rem auto  ;
+    text-shadow: -2px -2px black;
+}
+
+.heroP__slogan{
+    font-size: 2rem;
+    font-family: 'Marcellus', serif;
+
+}
+
+.heroP__wrapper{
+position: absolute;
+top: 40%;
+left: 25%;
+}
+
+/* FIN HERO PRODUCTOS */ 
+
+/* GRID PRODUCTOS */
+
+.grid__container {
+    display: grid;
+    height: 165vh;
+    grid-template-rows: 7rem 30rem 30rem 30rem;
+    grid-template-columns: 13% 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    background: url(../img/background_productospng.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.grid__titulo {
+    /* display: block; */
+    text-align: center;
+    margin: 0.5rem;
+    FONT-SIZE: 3.5REM;
+    font-family: 'Assistant', sans-serif;
+    text-shadow: -2px -2px black;
+}
+
+.grid__item1 {
+    grid-column: 1 / 7;
+    justify-self: center;
+    align-self: center;
+}
+
+.grid__item2 {
+    grid-column: 1 / 1;
+    grid-row: 2 / 5;
+    align-self: center;
+
+}
+ul.grid__ul {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 2rem;
+    text-shadow: -1px -1px black;
+}
+
+.grid__item3{
+    justify-self: center;
+    align-self: center;
+}
+
+.producto__card {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 29px;
+    border: black solid 1px;
+    box-shadow: 0 0 13px 0 rgb(185, 185, 185, .75);
+}
+.grid__categorias{
+    margin: 3rem 1rem;
+   font-size: 1.5rem;
+   font-family: 'Marcellus', serif;
+   text-decoration: none;
+
+}
+
+img.producto__img {
+    height: 350px;
+    width: 300px;
+    margin: 0.3rem;
+    padding: .5rem;
+    border-radius: 45px;
+    background-size: cover;
+}
+
+.producto__titulo, .producto__price{
+    display: inline-block;
+    font-family: 'Marcellus', serif;
+}
+
+.producto__titulo{
+    font-size: 1.9rem;
+
+}
+
+.producto__price{
+    font-size: 1.2rem;
+    background-color: black;
+    border: black solid 2px;
+    color: white;
+    border-radius: 10px;
+    padding: .3rem;
+}
+/* FIN GRID PRODUCTOS */
+
+
+    /* ---- FIN PRODUCTOS ----*/
+
+
+    /* ---- FAQ ----*/
+
+/*  FAQ HERO */
+.heroF {
+    background-image: url(../img/hero_faq.jpg);
+    color: white;
+    height: 55vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+.heroF__titulo{
+    font-size: 4rem;
+    font-family: 'Marcellus', serif;
+}
+
+.heroF__titulo, .heroF__slogan {
+    padding: 1rem;
+    text-shadow: 2px 2px black
+}
+
+.heroF__slogan{
+    font-size: 2rem;
+    font-family: 'Assistant', sans-serif;
+    
+}
+
+.heroF__wrapper {
+    margin: 2rem;
+}
+
+.buscador {
+    width: 25rem;
+    height: 2rem;
+    margin: 1rem;
+    box-shadow: 2px 2px black;
+    border-radius: 8px
+}
+/*  FIN FAQ HERO */
+
+
+
+
+/*  FAQ CONTAINER */
+
+.faq__container {
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 95%, rgba(0,0,0,1) 100%);
+}
+.faq__modulo {
+    align-self: flex-start;
+    margin: 1rem 3rem;
+    background-color:#f8fafa ;
+    width: 150vh;
+    border-radius: 15px;
+    box-shadow: 0 0 13px 0 rgb(185, 185, 185, .25);
+}
+
+.faq__preg, .faq__resp{
+    font-family: 'Assistant', sans-serif;
+    padding: 0.5rem 2rem;
+    text-shadow: 0 0 13px 0 rgb(185, 185, 185, .25);
+}
+
+.faq__preg{
+    font-size: 2.3rem;
+}
+
+
+.faq__resp{
+    font-size: 1.3rem;
+}
+/*  FIN FAQ CONTAINER */
+
+    /* ---- FIN FAQ ----*/
+
+    /* ---- INICIO RESPONSIVE  ----*/
+
+@media  screen and  (max-width: 767px) { 
+
+    .header__logo{
+        width: 100px;
+    }
+
+    .header__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;           
+    }
+
+    .header__anchor{
+        padding: 0;
+        margin: .5rem;
+    }
+
+    .header__item {
+        margin: .3rem;
+    }
+
+    .hero{
+        height: 72vh;
+    }
+
+    .hero__titulo {
+        font-size: 1.2em;
+    }
+
+    .hero__slogan{
+        font-size: .8em;
+    }
+
+    .hero__btn{
+        font-size: .5em;
+        width: 125px;
+        padding: .5rem .2rem;
+    }
+
+    .info__titular{
+        font-size: 1em;
+        padding: 1rem;
+    }
+
+    .tarjetasHome{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr) 50px;
+        gap: 0;
+    }
+
+    .infocard{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        margin: 1rem;
+        border-radius: 15px;
+    }
+
+    .infocard_img {
+        grid-row: 1 / 4;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .infocard__titulo{
+        font-size: .8em;
+        padding: 0;
+    }
+
+    .infocard__desc{
+        font-size: .5em;
+        padding: 0;
+    }
+    
+    .infocard__btn {
+        font-size: .5em;
+        padding: .5rem;
+        margin: 0;
+        width: 50%;
+    }
+
+    .info__btnDiv {
+        align-self: center;
+        grid-column: 1;
+        margin-bottom: 1rem;
+    }
+
+    .info__btn {
+        padding: 0.5rem;
+        font-size: .5em;
+        margin: 1rem;
+    }
+
+    .contactoHome{
+        height: 135px;
+    }
+
+    .contactoHome__titulo{
+        font-size: 1.2em;
+        margin: 0.5rem auto;
+    }
+
+    .contactoHome__desc{
+        font-size: .5em;
+        margin: 0.5rem auto;
+    }
+
+    .contactoHome__btn{
+        font-size: .5em;
+        padding: .5rem;
+        margin: 0.5rem;
+    }
+    .footer__nav{
+        height: 85px;
+        
+
+    }
+    img.footer__logosmedios {
+        width: 20px;
+        margin: 1px;
+    }
+
+    .footer__medios {
+        margin: .5rem;
+    }
+
+    .footer__anchor {
+         padding: 0;
+         font-size: .6em;
+    }
+
+    .footer__txt{
+        font-size: .5em;
+        margin: 0;
+        padding: .3rem;
+    }
+
+    .footer__ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logoLocation{
+        display: none;
+    }
+
+    .footer__copyLocation {
+        flex-direction: column-reverse;
+    }
+}   
+
+@media  screen and  (max-width: 1024px) {
+
+    .tarjetasHome {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr) 80px;
+        gap: 0;
+    }
+
+    .infocard{
+        margin: 2rem;
+    }
+    
+    .footer__nav{
+        height: 85px;  
+
+    }
+    img.footer__logosmedios {
+        width: 20px;
+        margin: 1px;
+    }
+
+    .footer__medios {
+        margin: .5rem;
+    }
+
+    .footer__anchor {
+         padding: 0;
+         font-size: .6em;
+    }
+
+    .footer__txt{
+        font-size: .5em;
+        margin: 0;
+        padding: .3rem;
+    }
+
+    .footer__ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logoLocation{
+        display: none;
+    }
+
+    .footer__copyLocation {
+        flex-direction: column-reverse;
+    }
+ }
