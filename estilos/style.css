@@ -496,10 +496,7 @@ a.footer__anchor:hover {
 }
 
 .nosotroscard__titulo, .nosotroscard__desc {
-    /* display: inline-block; */
-    /* position: absolute; */
     text-align: center;
-    /* width: 25rem; */
     margin: 1rem;
     padding: 1rem;
 }
@@ -916,7 +913,7 @@ img.producto__img {
     }
 
     .infocard{
-        margin: 2rem;
+        margin: 1rem;
     }
     
     .footer__nav{
