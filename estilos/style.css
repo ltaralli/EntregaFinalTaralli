@@ -352,8 +352,8 @@ a.footer__anchor:hover {
 
 .formcard {
     background-color: white;
-    height: 30rem;
-    width: 80rem;
+    height: 33rem;
+    width: 55rem;
     display: flex;
     flex-direction: column;
     border-radius: 40px;
@@ -364,7 +364,7 @@ a.footer__anchor:hover {
 
 .fieldset__legend {
     text-align: center;
-    width: 80rem;
+    width: 55rem;
     background-color: #ecf1f4;
     border-radius: 35px 35px 0px 0px;
     font-size: 2.5rem;
@@ -373,17 +373,26 @@ a.footer__anchor:hover {
     box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
 }
 
+.fieldset__campos {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: repeat(5, 1fr) 2fr;
+    align-items: center;
+    justify-items: center;
+}
+
 .fieldset__label {
-    padding: 0.5rem;
-    margin: 0.5px;
-    display: inline-block;
+    /* padding: 0.5rem; */
+    /* margin: 0.5px; */
+    display: inline;
     text-shadow: 0px 1px 0px black;
+    /* text-decoration: none; */
 }
 
 .fieldset__imput {
     border-radius: 15px;
     height: 2rem;
-    width: 27rem;
+    width: 19rem;
     float: right;
     margin: 0.309rem 2rem;
     padding: 1rem;
