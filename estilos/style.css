@@ -290,8 +290,8 @@ img.footer__logosmedios {
 
 .footer__logoLocation {
     display: inline-block;
-    width: 1.3rem;
-    height: 2rem;
+    width: 17PX;
+    height: 25PX;
     margin: -0.5rem 0;
     filter: invert(100%);
 }
@@ -703,11 +703,10 @@ img.producto__img {
 .heroF {
     background-image: url(../img/hero_faq.jpg);
     color: white;
-    height: 55vh;
+    height: 65vh;
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
     flex-direction: column;
     justify-content: space-around;
 }
@@ -730,10 +729,6 @@ img.producto__img {
     
 }
 
-.heroF__wrapper {
-    margin: 2rem;
-}
-
 .buscador {
     width: 25rem;
     height: 2rem;
@@ -749,17 +744,18 @@ img.producto__img {
 /*  FAQ CONTAINER */
 
 .faq__container {
-    height: 160vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 95%, rgba(0,0,0,1) 100%);
+    align-items: center;
+    justify-content: space-around;
 }
+
 .faq__modulo {
-    align-self: flex-start;
-    margin: 1rem 3rem;
-    background-color:#f8fafa ;
-    width: 150vh;
+    margin: 1rem 0;
+    background-color: #f8fafa;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 0 0 13px 0 rgb(185, 185, 185, .25);
 }
