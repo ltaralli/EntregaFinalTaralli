@@ -20,23 +20,30 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./estilos/style.css">
 </head>
 <body>
     <header class="header">
-            <nav class="header__nav">
+        <nav class="header__nav navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">    
                 <figure class="header__figure">
-                    <a class="header__BtnImg" href="#" ><img class="header__logo" src="./img/Logo.png" alt="Nuestro Logo" cla></a>
+                    <a class="header__BtnImg navbar-brand" href="#" ><img class="header__logo" src="./img/Logo.png" alt="Nuestro Logo" cla></a>
                 </figure>
-                <ul class="header__list">
-                    <li class="header__item" ><a href="./vistas/contacto.html" class="header__anchor">Contactanos</a></li>
-                    <li class="header__item"><a href="./vistas/nosotros.html" class="header__anchor">Quienes Somos</a></li>
-                    <li class="header__item"><a href="./vistas/productos.html" class="header__anchor">Productos</a></li>
-                    <li class="header__item"><a href="./vistas/faq.html" class="header__anchor">Preguntas Frecuentes</a></li>
-                </ul>
-            </nav>
-        </div>    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">     
+                    <ul class="header__list navbar-nav">
+                     <li class="header__item nav-item" ><a href="./vistas/contacto.html" class="header__anchor">Contactanos</a></li>
+                     <li class="header__item nav-item"><a href="./vistas/nosotros.html" class="header__anchor">Quienes Somos</a></li>
+                     <li class="header__item nav-item"><a href="./vistas/productos.html" class="header__anchor">Productos</a></li>
+                     <li class="header__item nav-item"><a href="./vistas/faq.html" class="header__anchor">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>    
     </header>
 
 <main>
@@ -45,11 +52,11 @@
             data-aos-anchor-placement="top-bottom">¡Hola, somos Flecha Cangreja!</h1>
             <p class="hero__slogan" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom">Un mini emprendimiento familiar de accesorios, piedras preciosas y mucho mas</p>
-         <a data-aos="fade-up"
-         data-aos-anchor-placement="top-bottom" class="hero__btn" href="./vistas/nosotros.html">Conocenos un poco más</a>
+            <a data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" class="hero__btn" href="./vistas/nosotros.html">Conocenos un poco más</a>
     </section>
 
-    <section class="info">
+    <section class="info" >
         <div class="info__titular" data-aos="zoom-in">
             <P class="info__titulo">ALGUNOS DE NUESTROS PRODUCTOS</P>
         </div>
@@ -127,8 +134,7 @@
     </nav>
 </footer>
 
-<script>
-    AOS.init();
-  </script>
+<script> AOS.init(); </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

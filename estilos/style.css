@@ -4,8 +4,36 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/*  DESREBOOT BOOTSTRAP */
 
-    /* ---- HOME ---- */
+p{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+dl, ol, ul{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#navbarNav{
+    justify-content: flex-end;
+}
+/*  FIN DESREBOOT BOOTSTRAP */
+    
+
+/* FONTS */
+.contactoHome__btn, .info__btn, .infocard__btn, .hero__btn, .header__anchor, .footer__anchor, .footer__nombre, .footer__ciudad{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+/* FIN FONTS */
+
+
+/* ---- HOME ---- */
 
 /* HEADER */
 
@@ -22,6 +50,7 @@
     padding: 0.5rem 0rem;
     margin: 0rem .5rem;
     border-bottom: black solid 2px;
+    display: inline-block;
 }
 
 .header__anchor:hover{
@@ -47,15 +76,12 @@ img.header__logo:hover {
 
 }
 
-
+.navbar-nav{
+    align-items: center;
+}
 /* FIN HEADER */
 
-/* FONTS */
-.contactoHome__btn, .info__btn, .infocard__btn, .hero__btn, .header__anchor, .footer__anchor, .footer__nombre, .footer__ciudad{
-    font-family: 'Poppins', sans-serif;
-    color: black;
-}
-/* FIN FONTS */
+
 
 /* HERO HOME*/
 
@@ -200,7 +226,7 @@ img.header__logo:hover {
 
 .contactoHome{
     background-color: #7C5869;
-    height: 40vh;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -758,9 +784,10 @@ img.producto__img {
 
     /* ---- INICIO RESPONSIVE  ----*/
 
+/*  MEDIA QUERY */
 @media  screen and (min-width: 150px) and (max-width: 767px) { 
 
-    .header__logo{
+    /* .header__logo{
         width: 100px;
     }
 
@@ -778,7 +805,7 @@ img.producto__img {
 
     .header__item {
         margin: .3rem;
-    }
+    } */
 
     .hero{
         height: 72vh;
@@ -855,7 +882,7 @@ img.producto__img {
     }
 
     .contactoHome{
-        height: 135px;
+        height: 150px;
     }
 
     .contactoHome__titulo{
@@ -874,7 +901,7 @@ img.producto__img {
         margin: 0.5rem;
     }
     .footer__nav{
-        height: 85px;
+        height: 100px;
         
 
     }
@@ -926,7 +953,7 @@ img.producto__img {
     }
     
     .footer__nav{
-        height: 85px;  
+        height: 100px;  
 
     }
 
@@ -954,7 +981,6 @@ img.producto__img {
     .footer__txt{
         font-size: .5em;
         margin: 0;
-        padding: .3rem;
     }
 
     .footer__ul {
