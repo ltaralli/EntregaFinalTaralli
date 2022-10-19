@@ -453,45 +453,48 @@ a.footer__anchor:hover {
 }
 
 /* HERO NOSOTROS */
-.heroN {
-    background-image: url(../img/background_nosotros.png);
-    background-repeat: no-repeat;
+.heroN__container {
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.heroN{
+    background-image: url(../img/background_nosotros.png);
     height: 90vh;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    background-repeat: no-repeat;
 }
 
-.heroN__txt {
-    margin: 3rem;
-}
 
 .heroN__titulo{
     font-size: 6rem;
 }
 
 .heroN__titulo, .heroN__slogan {
-    margin: 1rem;
     text-shadow: 2px 2px black;
+    margin: 1rem 3rem;
+    padding: 1rem 3rem;
 }
+
 
 .heroN__slogan {
     font-size: 1.3rem;
     text-align: initial;
 }
 
-.heroN__div {
-    border-radius: 50px;
+.heroN__div, .nosotroscard__img {
+    border-radius: 10%;
     box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
 }
 
 
 .heroN__img {
-    margin: 3rem;
+    margin: 1.5rem;
     height: 25rem;
     width: 25rem;
     border-radius: 40px;
@@ -500,7 +503,7 @@ a.footer__anchor:hover {
 
 /* NOSOTROS CARD */
 
-#mivideo {  
+/* #mivideo {  
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -511,42 +514,62 @@ a.footer__anchor:hover {
     transform: translateX(-50%) translateY(-50%);  
     z-index: -100;
     background-size: cover;
+  } */
+
+  .main__nosotros{
+    height: 77.6vh;
+    /* align-items: center; */
+    scroll-snap-type:  y mandatory;
+    overflow-y: scroll;
+   
   }
 
+  .main__nosotros::-webkit-scrollbar { 
+    /* solo oculta su visualizacion */
+    display: none;
+  }
 
-  .nosotroscard1, .nosotroscard2, .nosotroscard3 {
-    background-color: white;
-    height: 35vh;
-    width: 50%;
-    border-radius: 30px;
-    margin: 4rem;
+  .nosotroscard1, .nosotroscard2, .nosotroscard3, .heroN {
+    background-color: #e6e3ec;
+    height: 78vh;
     box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    scroll-snap-align: start; 
     align-items: center;
+    justify-content: center;
 }
 
 .nosotroscard2{
-    float: right;
+ flex-direction: row-reverse;
+ background-color: #F5EDF0;
 }
 
 .nosotroscard__titulo, .nosotroscard__desc {
     text-align: center;
-    margin: 1rem;
+    margin: 1rem 3rem;
     padding: 1rem;
 }
 
 .nosotroscard__img {
-    width: 40%;
-    height: 100%;
-    border-radius: 25px 0px 0px 25px;
+    width: 500px;
+    height: 500px;
+    border-radius: 15%;
+    margin: 2rem;
+    padding: 2rem;
 }
 
-h2.nosotroscard__titulo {
+.nosotroscard__titulo {
     font-size: 2.5rem;
 }
-p.nosotroscard__desc {
+.nosotroscard__desc {
     font-size: 1.3rem;
+}
+
+.nosotroscard__txt, .heroN__txt {
+    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    border-radius: 2rem;
+    margin: 2rem;
 }
 
 /* FIN NOSOTROS CARD */ 
@@ -783,25 +806,47 @@ img.producto__img {
 /*  MEDIA QUERY */
 @media  screen and (min-width: 150px) and (max-width: 767px) { 
 
-    /* .header__logo{
-        width: 100px;
+    .footer__nav{
+        height: 100px;
+        
+
+    }
+    img.footer__logosmedios {
+        width: 20px;
+        margin: 1px;
     }
 
-    .header__list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;           
-    }
-
-    .header__anchor{
-        padding: 0;
+    .footer__medios {
         margin: .5rem;
     }
 
-    .header__item {
-        margin: .3rem;
-    } */
+    .footer__anchor {
+         padding: 0;
+         font-size: .6em;
+    }
+
+    .footer__txt{
+        font-size: .5em;
+        margin: 0;
+        padding: .3rem;
+    }
+
+    .footer__ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logoLocation{
+        display: none;
+    }
+
+    .footer__copyLocation {
+        flex-direction: column-reverse;
+    }
+
+
+    /*  home */
 
     .hero{
         height: 72vh;
@@ -896,70 +941,80 @@ img.producto__img {
         padding: .5rem;
         margin: 0.5rem;
     }
-    .footer__nav{
-        height: 100px;
-        
 
-    }
-    img.footer__logosmedios {
-        width: 20px;
-        margin: 1px;
+
+    /*  FAQ */
+
+    .heroF__titulo{
+        font-size: 3.5em;
     }
 
-    .footer__medios {
-        margin: .5rem;
+    .heroF__slogan{
+        font-size: 1.7em;
     }
 
-    .footer__anchor {
-         padding: 0;
-         font-size: .6em;
+    .buscador{
+        width: 75%;
     }
 
-    .footer__txt{
-        font-size: .5em;
-        margin: 0;
-        padding: .3rem;
-    }
-
-    .footer__ul {
-        display: flex;
-        flex-direction: column;
+    .heroF{
         align-items: center;
+        justify-content: center;
     }
 
-    .footer__logoLocation{
-        display: none;
+    /*  NOSOTROS*/
+
+    .heroN__img {
+        margin: .5rem;
+        height: 250px;
+        width: 250px;
+        border-radius: 15px;
     }
 
-    .footer__copyLocation {
+    .heroN__titulo, .heroN__slogan {
+        margin: .5rem 1rem;
+        padding: .25rem 1rem;
+        text-align: center;
+    }
+    
+    .heroN__titulo, .nosotroscard__titulo {
+        font-size: 1.8rem;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    .heroN__slogan, .nosotroscard__desc {
+        font-size: .7rem;
+        margin: .5rem;
+        padding: .5rem;
+    }
+
+    .nosotroscard1, .nosotroscard2, .nosotroscard3, .heroN__container{
+        flex-direction: column;
+    }
+   
+    .heroN__container{
         flex-direction: column-reverse;
+        }
+
+    .nosotroscard__img{
+        width: 250px;
+        height: 250px;
+        margin: .5rem;
+        padding: .5rem;
     }
+
+    .nosotroscard__txt, .heroN__txt {
+
+    border-radius: .5rem;
+    margin: .25rem;
+
+     }
+
 }   
 
 @media  screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .tarjetasHome {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr) 80px;
-        gap: 0;
-    }
-
-    .infocard{
-        margin: 1rem;
-    }
-    
-    .footer__nav{
-        height: 100px;  
-
-    }
-
-    .info__btnDiv {
-        align-self: baseline;
-        margin-top: 1rem;
-        justify-self: center;
-        grid-column: 1 / 3;
-    }
-
+   
     img.footer__logosmedios {
         width: 40px;
         margin: 1px;
@@ -992,5 +1047,32 @@ img.producto__img {
     .footer__copyLocation {
         flex-direction: row;
     }
+
+
+    /*  home */
+
+    .tarjetasHome {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr) 80px;
+        gap: 0;
+    }
+
+    .infocard{
+        margin: 1rem;
+    }
+    
+    .footer__nav{
+        height: 100px;  
+
+    }
+
+    .info__btnDiv {
+        align-self: baseline;
+        margin-top: 1rem;
+        justify-self: center;
+        grid-column: 1 / 3;
+    }
+
+ 
 
  }
