@@ -348,6 +348,7 @@ a.footer__anchor:hover {
     text-align: center;
     margin: .5rem auto  ;
     text-shadow: 2px 2px black;
+
 }
 
 .heroC__slogan{
@@ -367,6 +368,22 @@ a.footer__anchor:hover {
 
 /* FIELDSET*/ 
 
+.mainC, .form{
+}
+
+#mivideo {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-size: cover;
+}
+
 .form {
     font-family: 'Assistant', sans-serif;
     font-size: 1.5rem;
@@ -375,9 +392,10 @@ a.footer__anchor:hover {
 
 .formcard {
     background-color: #f8fafa;
-    height: 60vh;
+    height: auto;
     border-radius: 40px;
     box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    align-content: space-between;
 }
 
 .fieldset__legend {
@@ -497,18 +515,6 @@ textarea{
 
 /* NOSOTROS CARD */
 
-/* #mivideo {  
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: fixed;   
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);  
-    z-index: -100;
-    background-size: cover;
-  } */
 
   .main__nosotros{
     height: 77.6vh;
@@ -998,6 +1004,28 @@ img.producto__img {
 
      }
 
+     /*  CONTACTO*/
+
+     .heroC__titulo{
+        font-size: 2.5em;
+        margin: 1rem;
+     }
+
+     .formcard{
+        padding: 1rem;
+
+     }
+     .form{
+        height: auto;
+        margin: 2rem 0;
+     }
+
+     .fieldset__btn{
+        margin: .25rem;
+        width: auto;
+        font-size: .5em;
+        
+     }
 }   
 
 @media  screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1087,5 +1115,23 @@ img.producto__img {
         margin: .5rem;
         padding: .5rem;
     }
+  
+        /*  CONTACTO*/
+
+
+    .formcard{
+        padding: 1rem;
+
+     }
+     .form{
+        height: auto;
+        margin: 2rem 0;
+     }
+
+     .fieldset__btn{
+        margin: 1rem;
+        width: auto;
+        font-size: .5em;
         
+     }
  }
