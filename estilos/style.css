@@ -593,8 +593,8 @@ textarea{
 
 .heroP__titulo{
     font-size: 4rem;
-    font-family: 'Assistant', sans-serif;
-    
+
+    font-family: 'Marcellus', serif;
 }
 
 .heroP__titulo, .heroP__slogan{
@@ -605,27 +605,17 @@ textarea{
 
 .heroP__slogan{
     font-size: 2rem;
-    font-family: 'Marcellus', serif;
+    font-family: 'Assistant', sans-serif;
 
 }
 
-.heroP__wrapper{
-position: absolute;
-top: 40%;
-left: 25%;
-}
 
 /* FIN HERO PRODUCTOS */ 
 
 /* GRID PRODUCTOS */
 
 .grid__container {
-    display: grid;
     height: auto;
-    grid-template-rows: 7rem auto;
-    grid-template-columns: 17% 80%;
-    justify-content: center;
-    align-content: center;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     background: url(../img/background_productospng.jpg);
@@ -636,7 +626,6 @@ left: 25%;
 
 
 .grid__titulo {
-    /* display: block; */
     text-align: center;
     margin: 0.5rem;
     FONT-SIZE: 3.5REM;
@@ -644,18 +633,7 @@ left: 25%;
     text-shadow: -2px -2px black;
 }
 
-.grid__item1 {
-    grid-column: 1 / 3;
-    justify-self: center;
-    align-self: center;
-}
 
-.grid__item2 {
-    grid-column: 1 / 1;
-    grid-row: 2 / auto;
-    align-self: center;
-
-}
 ul.grid__ul {
     display: flex;
     flex-direction: column;
@@ -664,9 +642,9 @@ ul.grid__ul {
     text-shadow: -1px -1px black;
 }
 
-.grid__item3{
-    padding: 1.5rem;
-}
+/* .grid__item3{
+    padding: 2.5rem;
+} */
 
 .producto__card {
     background-color: rgba(245, 245, 245, 0.959);
@@ -674,9 +652,9 @@ ul.grid__ul {
     align-items: center;
     flex-direction: column;
     height: 35rem;
-    justify-content: space-evenly;
-    width: 300px;
-    margin: auto;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2rem auto;
     border-radius: 29px;
     box-shadow: 0 0 13px 0 rgb(185, 185, 185, .75);
 }
@@ -689,7 +667,7 @@ ul.grid__ul {
 }
 
 img.producto__img {
-    height: 65%;
+    height: 390px;
     width: 90%;
     margin: 0.3rem;
     padding: .5rem;
@@ -700,6 +678,7 @@ img.producto__img {
 .producto__titulo, .producto__price{
     display: inline-block;
     font-family: 'Marcellus', serif;
+    text-align: center;
 }
 
 .producto__titulo{
@@ -707,11 +686,12 @@ img.producto__img {
 
 }
 
-.producto__price{
+.producto__price {
     font-size: 1.2rem;
-    background-color:rgb(252, 140, 158);
+    background-color: rgb(252, 140, 158);
     border-radius: 10px;
     padding: .6rem;
+    margin-bottom: 1rem;
 }
 /* FIN GRID PRODUCTOS */
 
@@ -1025,6 +1005,19 @@ img.producto__img {
         font-size: .5em;
         
      }
+          /*  PRODUCTOS */
+        .heroP__titulo{
+        font-size: 3em;
+        margin: .25rem;
+    }
+
+    .heroP__slogan{
+        font-size: 1.2em;
+    }
+
+    .grid__titulo{
+        font-size: 2.5em;
+    }
 }   
 
 @media  screen and (min-width: 768px) and (max-width: 1024px) {
