@@ -48,19 +48,69 @@
     </header>
 
     <main>
-        <section class="heroP d-flex align-items-center justify-content-center" data-aos="zoom-out">
-            <div class="heroP__wrapper " data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
-                <h1 class="heroP__titulo">PRODUCTOS</h1>
-                <p class="heroP__slogan">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, consectetur!</p>
-            </div>
+        <section class="heroP" data-aos="zoom-out">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3500">
+                    <img src="../img/portaasahumerios_mano.jpg" class="d-block w-100" alt="Imagen de producto">
+                    <div class="carousel-caption d-none d-md-block ">
+                      <h5 class="carousel__h5">Porta Sahumerios</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3500">
+                    <img src="../img/polvo_de_hadasjpg.jpg" class="d-block w-100" alt="Imagen de producto">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="carousel__h5">Polvo de hadas</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3500">
+                    <img src="../img/pulseras_pareja.jpg"  class="d-block w-100" alt="Imagen de producto">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="carousel__h5">Pulseras para compartir</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3500">
+                    <img src="../img/gorrosymediasjpg.jpg" class="d-block w-100" alt="Imagen de producto">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="carousel__h5">Gorros y medias</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3500">
+                    <img src="../img/hornos.jpg" class="d-block w-100" alt="Imagen de producto">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="carousel__h5">Hornitos</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
 
         <section class="grid__product">
-            <div class="grid__container">  
-                <div class="grid__item1">
-                    <h2 class="grid__titulo">ESTOS PRODUCTOS TENEMOS PARA VOS</h2>
+            <div class="grid__container w-100 overflow-hidden">  
+                <div class="info__titular">
+                    <h2 class="info__titulo">NUESTROS PRODUCTOS</h2>
                 </div>
-              <div class="grid__categorias__productos row ">  
+              <div class="grid__categorias__productos row w-95">  
                 <div class="grid__item3 col-sm-12 col-md-4 col-lg-3">
                     <div class="producto__card">
                         <img class="producto__img" src="../img/imagen-no-disponible.jpg"    alt="Imagen Producto">
@@ -72,7 +122,7 @@
                     <div class="producto__card">
                         <img class="producto__img" src="../img/imagen-no-disponible.jpg"    alt="Imagen Producto">
                         <p class="producto__titulo">TITULO DEL PRODUCTO LARGO</p>
-                        <p class="producto__price"> $0.000 </p>
+                        <p class="producto__price "> $0.000 </p>
                     </div>
                 </div>
                 <div class="grid__item3 col-sm-12 col-md-4 col-lg-3">
@@ -165,8 +215,7 @@
                         <p class="producto__titulo">TITULO</p>
                         <p class="producto__price"> $0.000 </p>
                     </div>
-                </div>
-                
+                </div>           
             </div>
         </div>
         </section>

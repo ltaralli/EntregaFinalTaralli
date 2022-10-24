@@ -582,14 +582,14 @@ textarea{
 
 /* HERO PRODUCTOS */
 
-.heroP{
+/* .heroP{
     background-image: url(../img/hero_productos.jpg);
     color:white;
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
 .heroP__titulo{
     font-size: 4rem;
@@ -624,10 +624,42 @@ textarea{
     
 }
 
+.carousel-inner img {
+    max-height: 88vh;
+    object-fit: cover;
+    background-position: center;
+}
+
+
+.carousel, .carousel-inner > .item > p {
+    font-size: 1.5em;
+  }
+
+.carousel__h5{
+    font-size: 2em;
+}
+
+.grid__container > .info__titular > .info__titulo {
+    font-size: 1.2em;
+}
+
+.carousel-caption {
+    background-color: #1e1e1e59;
+    border-radius: 30px;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon  {
+    background-color: black;
+    padding: 1.5rem;
+    border-radius: 50px;
+}
 
 .grid__titulo {
     text-align: center;
     margin: 0.5rem;
+    padding: 2REM;
     FONT-SIZE: 3.5REM;
     font-family: 'Assistant', sans-serif;
     text-shadow: -2px -2px black;
@@ -1126,5 +1158,9 @@ img.producto__img {
         width: auto;
         font-size: .5em;
         
+     }
+
+     img.producto__img{
+        height: 325px;
      }
  }
