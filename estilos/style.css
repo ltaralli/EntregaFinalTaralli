@@ -144,7 +144,7 @@ img.header__logo:hover {
     padding: 3rem 2rem 2rem 2rem;
     text-align: center;
     background-color: #f8fafa;
-    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
     FONT-SIZE: 3.5em;
 }
 
@@ -172,7 +172,7 @@ img.header__logo:hover {
     border-radius: 30px;
     height: 60%;
     width: 90%;
-    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
     object-fit: cover;
 }
 
@@ -194,7 +194,7 @@ img.header__logo:hover {
     background-color: pink;
     text-align: center;
     border-radius: 1.5rem;
-    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
 }
 
 .info__btnDiv {
@@ -206,7 +206,7 @@ img.header__logo:hover {
     padding: 1rem;
     background-color: pink;
     border-radius: 20px;
-    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
 }
 
 
@@ -395,7 +395,7 @@ a.footer__anchor:hover {
     background-color: #f8fafa;
     height: auto;
     border-radius: 40px;
-    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
     align-content: space-between;
 }
 
@@ -407,7 +407,7 @@ a.footer__anchor:hover {
     font-size: 2.5rem;
     padding: 1rem;
     text-shadow: 1px 1px 1px black;
-    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
 }
 
 /* .fieldset__campos {
@@ -502,7 +502,7 @@ textarea{
 
 .heroN__div, .nosotroscard__img {
     border-radius: 10%;
-    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
 }
 
 
@@ -533,7 +533,7 @@ textarea{
   .nosotroscard1, .nosotroscard2, .nosotroscard3, .heroN {
     background-color: #e6e3ec;
     height: 78vh;
-    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
     display: flex;
     flex-direction: row; 
     scroll-snap-align: start; 
@@ -569,7 +569,7 @@ textarea{
 }
 
 .nosotroscard__txt, .heroN__txt {
-    box-shadow: 0 0 13px 0 rgb(185 185 185 / 50%);
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
     border-radius: 2rem;
     margin: 2rem;
 }

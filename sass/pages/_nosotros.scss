@@ -1,0 +1,119 @@
+ /* ----- NOSOTROS ------- */
+
+ .heroN__titulo, .nosotroscard__titulo{
+    font-family: 'Assistant', sans-serif;
+}
+
+.heroN__slogan, .nosotroscard__desc{
+    font-family: 'Marcellus', serif;
+
+}
+
+/* HERO NOSOTROS */
+.heroN__container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.heroN{
+    background-image: url(../img/background_nosotros.png);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.heroN__titulo{
+    font-size: 6rem;
+}
+
+.heroN__titulo, .heroN__slogan {
+    text-shadow: 2px 2px black;
+    margin: 1rem 3rem;
+    padding: 1rem 3rem;
+}
+
+
+.heroN__slogan {
+    font-size: 1.3rem;
+    text-align: initial;
+}
+
+.heroN__div, .nosotroscard__img {
+    border-radius: 10%;
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
+}
+
+
+.heroN__img {
+    margin: 1.5rem;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 40px;
+}
+/* FIN HERO NOSOTROS */ 
+
+/* NOSOTROS CARD */
+
+
+  .main__nosotros{
+    height: 77.6vh;
+    /* align-items: center; */
+    scroll-snap-type:  y mandatory;
+    overflow-y: scroll;
+   
+  }
+
+  .main__nosotros::-webkit-scrollbar { 
+    /* solo oculta su visualizacion */
+    display: none;
+  }
+
+  .nosotroscard1, .nosotroscard2, .nosotroscard3, .heroN {
+    background-color: #e6e3ec;
+    height: 78vh;
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
+    display: flex;
+    flex-direction: row; 
+    scroll-snap-align: start; 
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotroscard2{
+ flex-direction: row-reverse;
+ background-color: #F5EDF0;
+}
+
+.nosotroscard__titulo, .nosotroscard__desc {
+    text-align: center;
+    margin: 1rem 3rem;
+    padding: 1rem;
+}
+
+.nosotroscard__img {
+    width: 500px;
+    height: 500px;
+    border-radius: 15%;
+    margin: 2rem;
+    padding: 2rem;
+    object-fit: cover;
+}
+
+.nosotroscard__titulo {
+    font-size: 2.5rem;
+}
+.nosotroscard__desc {
+    font-size: 1.3rem;
+}
+
+.nosotroscard__txt, .heroN__txt {
+    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
+    border-radius: 2rem;
+    margin: 2rem;
+}
