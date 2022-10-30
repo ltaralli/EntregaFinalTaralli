@@ -11,39 +11,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
+    &__titulo {
+        text-align: center;
+        margin: .5rem auto  ;
+        text-shadow: 2px 2px black;
+        font-size: 4em;
+    }
+
+    &__slogan{
+        @extend .hero__titulo;
+        font-size: 2em;
+    }
+
+
+    &__btn {
+        padding: 1rem 0.2rem;
+        background-color: white;
+        border-radius: 2rem;
+        margin: 1rem;
+        width: 250px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .hero__btn:hover,  .contactoHome__btn:hover,  .fieldset__btn:hover{
+        background: pink;
+        color: black;
+        transition: all .5s ease;
+    }
+
 }
-
-.hero__titulo, .hero__slogan{
-    text-align: center;
-    margin: .5rem auto  ;
-    text-shadow: 2px 2px black;
-}
-
-.hero__slogan{
-    font-size: 2em;
-}
-
-.hero__titulo{
-    font-size: 4em;
-}
-
-.hero__btn {
-    padding: 1rem 0.2rem;
-    background-color: white;
-    border-radius: 2rem;
-    margin: 1rem;
-    width: 250px;
-    text-align: center;
-    font-size: 1em;
-}
-
-.hero__btn:hover, .contactoHome__btn:hover, .fieldset__btn:hover {
-    background: pink;
-    color: black;
-    transition: all .5s ease;
-}
-
-
 
 /* FIN HERO HOME*/
 
@@ -51,16 +50,28 @@
 
 .info{
     background-color: white;
- }
-    
- .info__titular {
-    padding: 3rem 2rem 2rem 2rem;
-    text-align: center;
-    background-color: #f8fafa;
-    box-shadow: 0 0 13px 0 rgba(185,185,185,50%);
-    font-size: 3.5em;
-}
 
+    
+     &__titular {
+        padding: 3rem 2rem 2rem 2rem;
+        text-align: center;
+        background-color: #f8fafa;
+        box-shadow: 0 0 13px 0 rgba(185,185,185,50%);
+        font-size: 3.5em;
+    }
+
+    &__btnDiv {
+        align-self: start;
+        grid-column: 3 / 2;
+    }
+    
+    &__btn {
+        padding: 1rem;
+        background-color: pink;
+        border-radius: 20px;
+        box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
+    }
+}
 .tarjetasHome {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -79,49 +90,41 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+        &:hover{
+            box-shadow: 0 0 15px 0 rgba(109, 109, 109, 0.9);
+            transition: all .4s ease-in-out;
+        }
 
-.infocard_img {
-    border-radius: 30px;
-    height: 60%;
-    width: 90%;
-    box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
-    object-fit: cover;
-}
+        &_img {
+            border-radius: 30px;
+            height: 60%;
+            width: 90%;
+            box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
+            object-fit: cover;
+        }
 
-.infocard__titulo {
-    padding: 1rem;
-    font-size: 2rem; 
-    text-align: center;  
-}
+        &__titulo {
+            padding: 1rem;
+            font-size: 2rem; 
+            text-align: center;  
+        }
 
-.infocard__desc {
-    padding: 1rem;
-    font-size: 1.3rem;
-    text-align: center;
-}
+        &__desc {
+            padding: 1rem;
+            font-size: 1.3rem;
+            text-align: center;
+        }
 
-.infocard__btn {
-    padding: 1rem 2rem;
-    margin-top: 1rem;
-    background-color: pink;
-    text-align: center;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
-}
+        &__btn {
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+            background-color: pink;
+            text-align: center;
+            border-radius: 1.5rem;
+            box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
+        }
 
-.info__btnDiv {
-    align-self: start;
-    grid-column: 3 / 2;
 }
-
-.info__btn {
-    padding: 1rem;
-    background-color: pink;
-    border-radius: 20px;
-    box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
-}
-
 
 .info__btn:hover, .infocard__btn:hover{
     background-color: white;
@@ -140,33 +143,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
+        &__titulo{
+            font-size: 4em;
+        }
+
+        &__desc{
+            font-size: 1.3em;
+        }
+        &__titulo{
+            text-align: center;
+            margin: 1rem auto  ;
+            display: inline-block;
+            color: white;
+            text-shadow: 2px 1px 0 #000000;
+        }
+
+        &__desc{
+            @extend .contactoHome__titulo;
+        }
+
+        &__btn {
+            display: inline-block;
+            padding: 1rem;
+            margin-top: 1rem;
+            background-color: white;
+            bottom: 0;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        // &__btn:hover:{
+        //     @extend .infocard__btn:hover;
+        // }
 }
 
-.contactoHome__titulo{
-    font-size: 4em;
-}
-
-.contactoHome__desc{
-    font-size: 1.3em;
-}
-.contactoHome__titulo, .contactoHome__desc{
-    text-align: center;
-    margin: 1rem auto  ;
-    display: inline-block;
-    color: white;
-    text-shadow: 2px 1px 0 #000000;
-    
-}
-
-.contactoHome__btn, .fieldset__btn {
-    display: inline-block;
-    padding: 1rem;
-    margin-top: 1rem;
-    background-color: white;
-    bottom: 0;
-    text-align: center;
-    border-radius: 30px;
-}
-
+    .fieldset__btn{
+        @extend .contactoHome__btn;
+    }
 
 /* FIN CONTACTO HOME*/

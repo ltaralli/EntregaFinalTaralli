@@ -1,46 +1,6 @@
  /* ---- PRODUCTOS ----*/
 
-/* HERO PRODUCTOS */
-
-.heroP__titulo{
-    font-size: 4rem;
-
-    font-family: 'Marcellus', serif;
-}
-
-.heroP__titulo, .heroP__slogan{
-    text-align: center;
-    margin: 1rem auto  ;
-    text-shadow: -2px -2px black;
-}
-
-.heroP__slogan{
-    font-size: 2rem;
-    font-family: 'Assistant', sans-serif;
-
-}
-
-
-/* FIN HERO PRODUCTOS */ 
-
-/* GRID PRODUCTOS */
-
-.grid__container {
-    height: auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    background: url(../img/background_productospng.jpg);
-    background-size: cover;
-    background-position: center;
-    
-}
-
-.carousel-inner img {
-    max-height: 88vh;
-    object-fit: cover;
-    background-position: center;
-}
-
+/* CARRUSEL */
 
 .carousel, .carousel-inner > .item > p {
     font-size: 1.5em;
@@ -66,27 +26,54 @@
     padding: 1.5rem;
     border-radius: 50px;
 }
-
-.grid__titulo {
-    text-align: center;
-    margin: 0.5rem;
-    padding: 2REM;
-    FONT-SIZE: 3.5REM;
-    font-family: 'Assistant', sans-serif;
-    text-shadow: -2px -2px black;
+.carousel-inner img {
+    max-height: 88vh;
+    object-fit: cover;
+    background-position: center;
 }
 
 
-ul.grid__ul {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    margin: 2rem;
-    text-shadow: -1px -1px black;
-}
+/* GRID PRODUCTOS */
+    .grid{
+       
+        &__container {
+            height: auto;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            background: url(../img/background_productospng.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        &__titulo {
+            text-align: center;
+            margin: 0.5rem;
+            padding: 2REM;
+            font-size: 3.5REM;
+            font-family: 'Assistant', sans-serif;
+            text-shadow: -2px -2px black;
+        }
 
 
-.producto__card {
+        &__ul {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            margin: 2rem;
+            text-shadow: -1px -1px black;
+        }
+
+        &__categorias{
+            margin:1rem;
+           font-size: 1.5rem;
+           font-family: 'Marcellus', serif;
+           text-decoration: none;
+        
+        }
+    }
+
+.producto {
     background-color: rgba(245, 245, 245, 0.959);
     display: flex;
     align-items: center;
@@ -97,43 +84,44 @@ ul.grid__ul {
     margin: 2rem auto;
     border-radius: 29px;
     box-shadow: 0 0 13px 0 rgba(185, 185, 185, .75);
-}
-.grid__categorias{
-    margin:1rem;
-   font-size: 1.5rem;
-   font-family: 'Marcellus', serif;
-   text-decoration: none;
+    transition: all .2s ease-in-out;
+        &:hover{
+            width: 93%;
+            box-shadow: 0 0 15px 0 rgba(139, 139, 139, 0.9);
+        }
 
-}
 
-img.producto__img {
-    height: 390px;
-    width: 90%;
-    margin: 0.3rem;
-    padding: .5rem;
-    border-radius: 28px;
-    object-fit: cover;
-}
+         &__img {
+            height: 390px;
+            width: 90%;
+            margin: 0.3rem;
+            padding: .5rem;
+            border-radius: 28px;
+            object-fit: cover;
+            transition: all .2s ease-in-out;
+                &:hover{
+                    width: 93%;
+                    height: 398px;
+                }
+        }
 
-.producto__titulo, .producto__price{
-    display: inline-block;
-    font-family: 'Marcellus', serif;
-    text-align: center;
-}
+        &__titulo{
+            display: inline-block;
+            font-family: 'Marcellus', serif;
+            text-align: center;
+        }
 
-.producto__titulo{
-    font-size: 1.9rem;
+        &__titulo{
+            font-size: 1.9rem;
+        }
 
-}
-
-.producto__price {
-    font-size: 1.2rem;
-    background-color: rgb(252, 140, 158);
-    border-radius: 10px;
-    padding: .6rem;
-    margin-bottom: 1rem;
-}
+        &__price {
+            @extend .producto__titulo;
+            font-size: 1.2rem;
+            background-color: rgb(252, 140, 158);
+            border-radius: 10px;
+            padding: .6rem;
+            margin-bottom: 1rem;
+        }
+    }
 /* FIN GRID PRODUCTOS */
-
-
-    /* ---- FIN PRODUCTOS ----*/

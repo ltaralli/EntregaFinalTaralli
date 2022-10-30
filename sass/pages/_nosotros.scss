@@ -10,14 +10,7 @@
 }
 
 /* HERO NOSOTROS */
-.heroN__container {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-}
+
 
 .heroN{
     background-image: url(../img/background_nosotros.png);
@@ -25,36 +18,52 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+    @extend .nosotroscard;
 
 
-.heroN__titulo{
-    font-size: 6rem;
-}
+        &__container {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
 
-.heroN__titulo, .heroN__slogan {
-    text-shadow: 2px 2px black;
-    margin: 1rem 3rem;
-    padding: 1rem 3rem;
-}
+        &__titulo{
+            font-size: 6rem;
+        }
 
-
-.heroN__slogan {
-    font-size: 1.3rem;
-    text-align: initial;
-}
-
-.heroN__div, .nosotroscard__img {
-    border-radius: 10%;
-    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
-}
+        &__titulo{
+            text-shadow: 2px 2px black;
+            margin: 1rem 3rem;
+            padding: 1rem 3rem;
+        }
 
 
-.heroN__img {
-    margin: 1.5rem;
-    height: 25rem;
-    width: 25rem;
-    border-radius: 40px;
+        &__slogan {
+            @extend .heroN__titulo;
+            font-size: 1.3rem;
+            text-align: initial;
+        }
+
+        &__div {
+            border-radius: 10%;
+            box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
+        }
+
+
+        &__img {
+            @extend .heroN__div;
+            margin: 1.5rem;
+            height: 25rem;
+            width: 25rem;
+            border-radius: 40px;
+        }
+        
+        &__txt{
+            @extend .nosotroscard__txt;
+        }
 }
 /* FIN HERO NOSOTROS */ 
 
@@ -66,15 +75,14 @@
     /* align-items: center; */
     scroll-snap-type:  y mandatory;
     overflow-y: scroll;
-   
+
+        &::-webkit-scrollbar { 
+        /* solo oculta su visualizacion */
+        display: none;
+    }
   }
 
-  .main__nosotros::-webkit-scrollbar { 
-    /* solo oculta su visualizacion */
-    display: none;
-  }
-
-  .nosotroscard1, .nosotroscard2, .nosotroscard3, .heroN {
+  .nosotroscard {
     background-color: #e6e3ec;
     height: 78vh;
     box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
@@ -83,37 +91,37 @@
     scroll-snap-align: start; 
     align-items: center;
     justify-content: center;
-}
 
-.nosotroscard2{
- flex-direction: row-reverse;
- background-color: #F5EDF0;
-}
+        &__2{
+            @extend .nosotroscard;
+         flex-direction: row-reverse;
+         background-color: #F5EDF0;
+        }
 
-.nosotroscard__titulo, .nosotroscard__desc {
-    text-align: center;
-    margin: 1rem 3rem;
-    padding: 1rem;
-}
+        &__titulo{
+            text-align: center;
+            margin: 1rem 3rem;
+            padding: 1rem;
+            font-size: 2.5rem;
+        }
 
-.nosotroscard__img {
-    width: 500px;
-    height: 500px;
-    border-radius: 15%;
-    margin: 2rem;
-    padding: 2rem;
-    object-fit: cover;
-}
+        &__img {
+            width: 500px;
+            height: 500px;
+            border-radius: 15%;
+            margin: 2rem;
+            padding: 2rem;
+            object-fit: cover;
+        }
 
-.nosotroscard__titulo {
-    font-size: 2.5rem;
-}
-.nosotroscard__desc {
-    font-size: 1.3rem;
-}
+        &__desc {
+            @extend .nosotroscard__titulo;
+            font-size: 1.3rem;
+        }
 
-.nosotroscard__txt, .heroN__txt {
-    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
-    border-radius: 2rem;
-    margin: 2rem;
-}
+        &__txt{
+            box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
+            border-radius: 2rem;
+            margin: 2rem;
+        }
+    }

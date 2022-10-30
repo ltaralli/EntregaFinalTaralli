@@ -10,26 +10,24 @@
     background-size: cover;
     flex-direction: column;
     justify-content: space-around;
+
+        &__titulo{
+            font-size: 4rem;
+            font-family: 'Marcellus', serif;
+        }
+
+        &__titulo, {
+            padding: 1rem;
+            text-shadow: 2px 2px black
+        }
+
+        &__slogan{
+            @extend .heroF__titulo;
+            font-size: 2rem;
+            font-family: 'Assistant', sans-serif;
+
+        }
 }
-
-
-
-.heroF__titulo{
-    font-size: 4rem;
-    font-family: 'Marcellus', serif;
-}
-
-.heroF__titulo, .heroF__slogan {
-    padding: 1rem;
-    text-shadow: 2px 2px black
-}
-
-.heroF__slogan{
-    font-size: 2rem;
-    font-family: 'Assistant', sans-serif;
-    
-}
-
 .buscador {
     width: 25rem;
     height: 2rem;
@@ -44,37 +42,40 @@
 
 /*  FAQ CONTAINER */
 
-.faq__container {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    background: rgb(255,255,255);
-    align-items: center;
-    justify-content: space-around;
-}
+.faq{
 
-.faq__modulo {
-    margin: 1rem 0;
-    background-color: #f8fafa;
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
-}
+    &__container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: rgb(255,255,255);
+        align-items: center;
+        justify-content: space-around;
+    }
 
-.faq__preg, .faq__resp{
-    font-family: 'Assistant', sans-serif;
-    padding: 0.5rem 2rem;
-    text-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
-}
+    &__modulo {
+        margin: 1rem 0;
+        background-color: #f8fafa;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
+    }
 
-.faq__preg{
-    font-size: 2.3rem;
-}
+    &__preg {
+        font-family: 'Assistant', sans-serif;
+        padding: 0.5rem 2rem;
+        text-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
+    }
+
+    &__preg{
+        @extend .faq__resp;
+        font-size: 2.3rem;
+    }
 
 
-.faq__resp{
-    font-size: 1.3rem;
+    &__resp{
+        font-size: 1.3rem;
+     }
+
 }
 /*  FIN FAQ CONTAINER */
-
-    /* ---- FIN FAQ ----*/
