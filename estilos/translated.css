@@ -71,7 +71,8 @@ dl, ol, ul {
     text-align: center;
     background-color: #f8fafa;
     box-shadow: 0 0 13px 0 #b9b9b9;
-    font-size: 3.5em; }
+    font-size: 3.5em;
+    margin-bottom: 2rem; }
   .info__btnDiv {
     align-self: start;
     grid-column: 3 / 2; }
@@ -113,7 +114,7 @@ dl, ol, ul {
     text-align: center; }
   .infocard__desc {
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center; }
   .infocard__btn {
     padding: 1rem 2rem;
@@ -156,6 +157,23 @@ dl, ol, ul {
     border-radius: 30px; }
 
 /* FIN CONTACTO HOME*/
+/* whatsapp btn*/
+img.btn-whatsapp {
+  display: block !important;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 100px !important; }
+
+img.btn-whatsapp:hover {
+  border-radius: 100px !important;
+  -webkit-box-shadow: 0px 0px 15px 0px #075e54;
+  -moz-box-shadow: 0px 0px 15px 0px #075e54;
+  box-shadow: 0px 0px 15px 0px #075e54;
+  transition-duration: 1s; }
+
 /* HERO CONTACTO */
 .heroC {
   background-image: url(../img/hero_contacto.jpg);
@@ -238,7 +256,7 @@ textarea {
 /* HERO NOSOTROS */
 .heroN {
   background-image: url(../img/background_nosotros.png);
-  height: 90vh;
+  height: 91vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -248,7 +266,7 @@ textarea {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 90vh; }
+    height: 91vh; }
   .heroN__titulo, .heroN__slogan {
     font-size: 6rem; }
   .heroN__titulo, .heroN__slogan {
@@ -256,21 +274,21 @@ textarea {
     margin: 1rem 3rem;
     padding: 1rem 3rem; }
   .heroN__slogan {
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-align: initial; }
   .heroN__div, .heroN__img {
     border-radius: 10%;
     box-shadow: 0 0 13px 0 #b9b9b9; }
   .heroN__img {
     margin: 1.5rem;
-    height: 25rem;
-    width: 25rem;
+    max-height: 500px;
+    max-width: 500px;
     border-radius: 40px; }
 
 /* FIN HERO NOSOTROS */
 /* NOSOTROS CARD */
 .main__nosotros {
-  height: 77.6vh;
+  height: 77.7vh;
   /* align-items: center; */
   scroll-snap-type: y mandatory;
   overflow-y: scroll; }
@@ -296,14 +314,14 @@ textarea {
     padding: 1rem;
     font-size: 2.5rem; }
   .nosotroscard__img {
-    width: 500px;
-    height: 500px;
+    max-width: 650px;
+    max-height: 650px;
     border-radius: 15%;
     margin: 2rem;
     padding: 2rem;
     object-fit: cover; }
   .nosotroscard__desc {
-    font-size: 1.3rem; }
+    font-size: 2rem; }
   .nosotroscard__txt, .heroN__txt {
     box-shadow: 0 0 13px 0 #b9b9b9;
     border-radius: 2rem;
@@ -332,7 +350,7 @@ textarea {
   border-radius: 50px; }
 
 .carousel-inner img {
-  max-height: 88vh;
+  max-height: 89vh;
   object-fit: cover;
   background-position: center; }
 
@@ -451,15 +469,13 @@ textarea {
   border-radius: 15px;
   box-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25); }
 
-.faq__preg {
+.faq__preg, .faq__resp {
   font-family: 'Assistant', sans-serif;
   padding: 0.5rem 2rem;
-  text-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25); }
+  text-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
+  font-size: 2.5rem; }
 
-.faq__preg {
-  font-size: 2.3rem; }
-
-.faq__resp, .faq__preg {
+.faq__resp {
   font-size: 1.3rem; }
 
 /*  FIN FAQ CONTAINER */

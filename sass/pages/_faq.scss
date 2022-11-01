@@ -65,15 +65,12 @@
         font-family: 'Assistant', sans-serif;
         padding: 0.5rem 2rem;
         text-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
-    }
-
-    &__preg{
-        @extend .faq__resp;
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 
 
     &__resp{
+        @extend .faq__preg;
         font-size: 1.3rem;
      }
 
