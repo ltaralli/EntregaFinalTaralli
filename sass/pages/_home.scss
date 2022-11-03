@@ -55,8 +55,8 @@
      &__titular {
         padding: 3rem 2rem 2rem 2rem;
         text-align: center;
-        background-color: #f8fafa;
-        box-shadow: 0 0 13px 0 rgba(185,185,185,50%);
+        background-color: $color-card;
+        box-shadow: $sombras-card;
         font-size: 3.5em;
         margin-bottom: 2rem;
     }
@@ -70,7 +70,7 @@
         padding: 1rem;
         background-color: pink;
         border-radius: 20px;
-        box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
+        box-shadow: $sombras-card;
     }
 }
 .tarjetasHome {
@@ -82,17 +82,17 @@
 }
 
 .infocard {
-    background-color: #f8fafa;
+    background-color: $color-card;
     padding: 1rem;
     margin: 2rem 4rem;
     border-radius: 30px;
-    box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
+    box-shadow: $sombras-card;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
         &:hover{
-            box-shadow: 0 0 15px 0 rgba(109, 109, 109, 0.9);
+            box-shadow: $sombras-card;
             transition: all .4s ease-in-out;
         }
 
@@ -100,7 +100,7 @@
             border-radius: 30px;
             height: 60%;
             width: 90%;
-            box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
+            box-shadow: $sombras-card;
             object-fit: cover;
         }
 
@@ -122,7 +122,7 @@
             background-color: pink;
             text-align: center;
             border-radius: 1.5rem;
-            box-shadow: 0 0 13px 0 rgba(185, 185, 185, 50%);
+            box-shadow: $sombras-card;
         }
 
 }

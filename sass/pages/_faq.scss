@@ -13,7 +13,7 @@
 
         &__titulo{
             font-size: 4rem;
-            font-family: 'Marcellus', serif;
+            font-family: $font-Marcellus;
         }
 
         &__titulo, {
@@ -24,7 +24,7 @@
         &__slogan{
             @extend .heroF__titulo;
             font-size: 2rem;
-            font-family: 'Assistant', sans-serif;
+            font-family: $font-Assistant;
 
         }
 }
@@ -55,14 +55,14 @@
 
     &__modulo {
         margin: 1rem 0;
-        background-color: #f8fafa;
+        background-color: $color-card;
         width: 100%;
         border-radius: 15px;
         box-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
     }
 
     &__preg {
-        font-family: 'Assistant', sans-serif;
+        font-family: $font-Assistant;
         padding: 0.5rem 2rem;
         text-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
         font-size: 2.5rem;

@@ -100,7 +100,7 @@ dl, ol, ul {
   justify-content: center;
   align-items: center; }
   .infocard:hover {
-    box-shadow: 0 0 15px 0 rgba(109, 109, 109, 0.9);
+    box-shadow: 0 0 13px 0 #b9b9b9;
     transition: all .4s ease-in-out; }
   .infocard_img {
     border-radius: 30px;
@@ -212,7 +212,7 @@ img.btn-whatsapp:hover {
   background-size: cover; }
 
 .form {
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   font-size: 1.5rem;
   height: 100vh; }
 
@@ -248,10 +248,10 @@ textarea {
 /* ---- FIN CONTACTO ---- */
 /* ----- NOSOTROS ------- */
 .heroN__titulo, .heroN__slogan, .nosotroscard__titulo, .nosotroscard__desc {
-  font-family: 'Assistant', sans-serif; }
+  font-family: "Assistant", sans-serif; }
 
 .heroN__slogan, .nosotroscard__desc {
-  font-family: 'Marcellus', serif; }
+  font-family: "Marcellus", serif; }
 
 /* HERO NOSOTROS */
 .heroN {
@@ -342,7 +342,7 @@ textarea {
   background-color: #1e1e1e59;
   border-radius: 30px;
   padding: 2rem;
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-color: black;
@@ -368,7 +368,7 @@ textarea {
   margin: 0.5rem;
   padding: 2REM;
   font-size: 3.5REM;
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   text-shadow: -2px -2px black; }
 
 .grid__ul {
@@ -381,7 +381,7 @@ textarea {
 .grid__categorias {
   margin: 1rem;
   font-size: 1.5rem;
-  font-family: 'Marcellus', serif;
+  font-family: "Marcellus", serif;
   text-decoration: none; }
 
 .producto {
@@ -412,7 +412,7 @@ textarea {
       height: 398px; }
   .producto__titulo, .producto__price {
     display: inline-block;
-    font-family: 'Marcellus', serif;
+    font-family: "Marcellus", serif;
     text-align: center; }
   .producto__titulo, .producto__price {
     font-size: 1.9rem; }
@@ -437,13 +437,13 @@ textarea {
   justify-content: space-around; }
   .heroF__titulo, .heroF__slogan {
     font-size: 4rem;
-    font-family: 'Marcellus', serif; }
+    font-family: "Marcellus", serif; }
   .heroF__titulo, .heroF__slogan {
     padding: 1rem;
     text-shadow: 2px 2px black; }
   .heroF__slogan {
     font-size: 2rem;
-    font-family: 'Assistant', sans-serif; }
+    font-family: "Assistant", sans-serif; }
 
 .buscador {
   width: 25rem;
@@ -470,7 +470,7 @@ textarea {
   box-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25); }
 
 .faq__preg, .faq__resp {
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   padding: 0.5rem 2rem;
   text-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
   font-size: 2.5rem; }
@@ -569,11 +569,15 @@ textarea {
   display: inline-block;
   text-decoration: none; }
 
+.footer__redes__logos {
+  filter: invert(100%);
+  margin: 1rem; }
+
 /* ---- INICIO RESPONSIVE  ----*/
 /*  MEDIA QUERY */
 @media screen and (min-width: 150px) and (max-width: 767px) {
   .footer__nav {
-    height: 100px; }
+    height: 120px; }
   .footer__logosmedios {
     width: 20px;
     margin: 1px; }
@@ -581,11 +585,13 @@ textarea {
     margin: .5rem; }
   .footer__anchor {
     padding: 0;
-    font-size: .6em; }
+    font-size: .6em;
+    text-align: center; }
   .footer__txt {
     font-size: .5em;
     margin: 0;
-    padding: .3rem; }
+    padding: .3rem;
+    text-align: center; }
   .footer__ul {
     display: flex;
     flex-direction: column;
@@ -594,6 +600,12 @@ textarea {
     display: none; }
   .footer__copyLocation {
     flex-direction: column-reverse; }
+  .footer__redes__logos {
+    height: 15px;
+    width: 15px;
+    margin: .3rem; }
+  .footer__li {
+    text-align: center; }
   /*  HOME */
   .hero {
     height: 72vh; }
@@ -625,7 +637,7 @@ textarea {
       font-size: .8em;
       padding: 0; }
     .infocard__desc {
-      font-size: .5em;
+      font-size: .7em;
       padding: 0; }
     .infocard__btn {
       font-size: .5em;
@@ -675,7 +687,7 @@ textarea {
     padding: 0.5rem;
     margin: 0.5rem; }
   .heroN__slogan, .nosotroscard__desc {
-    font-size: .7rem;
+    font-size: 1.1em;
     margin: .5rem;
     padding: .5rem; }
   .nosotroscard, .heroN, .nosotroscard__2, .nosotroscard__2, .heroN__container {
@@ -697,13 +709,13 @@ textarea {
   .heroC__slogan {
     font-size: 1.5em; }
   .formcard {
-    padding: 1rem;
-    margin: 0.5rem; }
+    padding: .5rem;
+    margin: 2.5rem;
+    width: inherit; }
   .form {
-    height: auto;
-    margin: 2rem; }
+    height: auto; }
   .fieldset__btn {
-    margin: .25rem;
+    margin: 1.25rem 0.25rem;
     width: auto;
     font-size: .5em; }
   /*  PRODUCTOS */
@@ -769,10 +781,11 @@ textarea {
     padding: .5rem; }
   /*  CONTACTO*/
   .formcard {
-    padding: 1rem; }
+    padding: .5rem;
+    margin: 2.5rem;
+    width: inherit; }
   .form {
-    height: auto;
-    margin: 2rem 0; }
+    height: auto; }
   .fieldset__btn {
     margin: 1rem;
     width: auto;

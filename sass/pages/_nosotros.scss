@@ -1,11 +1,11 @@
  /* ----- NOSOTROS ------- */
 
  .heroN__titulo, .nosotroscard__titulo{
-    font-family: 'Assistant', sans-serif;
+    font-family: $font-Assistant;
 }
 
 .heroN__slogan, .nosotroscard__desc{
-    font-family: 'Marcellus', serif;
+    font-family: $font-Marcellus;
 
 }
 
@@ -49,7 +49,7 @@
 
         &__div {
             border-radius: 10%;
-            box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
+            box-shadow: $sombras-card;
         }
 
 
@@ -85,7 +85,7 @@
   .nosotroscard {
     background-color: #e6e3ec;
     height: 78vh;
-    box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
+    box-shadow: $sombras-card;
     display: flex;
     flex-direction: row; 
     scroll-snap-align: start; 
@@ -120,7 +120,7 @@
         }
 
         &__txt{
-            box-shadow: 0 0 13px 0 rgba(185, 185, 185,  50%);
+            box-shadow: $sombras-card;
             border-radius: 2rem;
             margin: 2rem;
         }

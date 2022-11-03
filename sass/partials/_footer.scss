@@ -65,6 +65,11 @@
         display: inline-block;
         text-decoration: none;
     }
+
+    &__redes__logos{
+        filter: invert(100%);
+        margin: 1rem;
+    }
 }
 
 

@@ -6,7 +6,7 @@
 .footer{
 
     &__nav{
-        height: 100px;
+        height: 120px;
     }
 
     &__logosmedios {
@@ -21,12 +21,14 @@
     &__anchor {
         padding: 0;
         font-size: .6em;
+        text-align: center;
    }
 
    &__txt{
        font-size: .5em;
        margin: 0;
        padding: .3rem;
+       text-align: center;
    }
 
    &__ul {
@@ -42,6 +44,16 @@
    &__copyLocation {
        flex-direction: column-reverse;
    }
+   
+   &__redes__logos{
+    height: 15px;
+    width: 15px;
+    margin: .3rem;
+    }
+
+    &__li{
+        text-align: center;
+    }
 }
 
     /*  HOME */
@@ -91,7 +103,7 @@
         }
     
         &__desc{
-            font-size: .5em;
+            font-size: .7em;
             padding: 0;
         }
         
@@ -182,7 +194,7 @@
     }
 
     .heroN__slogan, .nosotroscard__desc {
-        font-size: .7rem;
+        font-size: 1.1em;
         margin: .5rem;
         padding: .5rem;
     }
@@ -221,22 +233,24 @@
         }
      }
 
-     .formcard{
-        padding: 1rem;
-        margin: 0.5rem;
+     .formcard {
+        padding: .5rem;
+        margin: 2.5rem;
+        width: inherit;
+    }
 
-     }
+
      .form{
         height: auto;
-        margin: 2rem;
      }
 
-     .fieldset__btn{
-        margin: .25rem;
+     .fieldset__btn {
+        margin: 1.25rem 0.25rem;
         width: auto;
         font-size: .5em;
-        
-     }
+    }
+
+
           /*  PRODUCTOS */
     
 .hero{
@@ -255,7 +269,7 @@
     font-size: 2.5em;
 }
 
-}   
+}
 
 @media  screen and (min-width: 768px) and (max-width: 1024px) {
    
@@ -298,6 +312,7 @@
         height: 100px;  
 
     }
+
 }
     /*  home */
 
@@ -350,13 +365,14 @@
         /*  CONTACTO*/
 
 
-    .formcard{
-        padding: 1rem;
-
-     }
+    .formcard {
+        padding: .5rem;
+        margin: 2.5rem;
+        width: inherit;
+    }
+    
      .form{
         height: auto;
-        margin: 2rem 0;
      }
 
      .fieldset__btn{

@@ -18,7 +18,7 @@
     background-color: #1e1e1e59;
     border-radius: 30px;
     padding: 2rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-Poppins;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon  {
@@ -51,7 +51,7 @@
             margin: 0.5rem;
             padding: 2REM;
             font-size: 3.5REM;
-            font-family: 'Assistant', sans-serif;
+            font-family: $font-Assistant;
             text-shadow: -2px -2px black;
         }
 
@@ -67,7 +67,7 @@
         &__categorias{
             margin:1rem;
            font-size: 1.5rem;
-           font-family: 'Marcellus', serif;
+           font-family: $font-Marcellus;
            text-decoration: none;
         
         }
@@ -107,7 +107,7 @@
 
         &__titulo{
             display: inline-block;
-            font-family: 'Marcellus', serif;
+            font-family: $font-Marcellus;
             text-align: center;
         }
 
