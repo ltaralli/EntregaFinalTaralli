@@ -270,7 +270,7 @@ textarea {
   .heroN__titulo, .heroN__slogan {
     font-size: 6rem; }
   .heroN__titulo, .heroN__slogan {
-    text-shadow: 2px 2px black;
+    color: black;
     margin: 1rem 3rem;
     padding: 1rem 3rem; }
   .heroN__slogan {
