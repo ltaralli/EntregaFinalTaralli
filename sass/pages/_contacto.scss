@@ -8,8 +8,7 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include justialign-center();
 
     &__titulo{
         text-align: center;
@@ -90,5 +89,4 @@ textarea{
 }
 
 /* FIN FIELDSET*/
-
     /* ---- FIN CONTACTO ---- */

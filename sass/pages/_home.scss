@@ -1,5 +1,4 @@
 /* HERO HOME*/
-
 .hero {
     background-image: url(../img/heroHome.jpg);
     color: white;
@@ -9,8 +8,7 @@
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include justialign-center();
 
 
     &__titulo {
@@ -89,8 +87,7 @@
     box-shadow: $sombras-card;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include justialign-center();
         &:hover{
             box-shadow: $sombras-card;
             transition: all .4s ease-in-out;
@@ -142,8 +139,7 @@
     height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include justialign-center();
 
 
         &__titulo{

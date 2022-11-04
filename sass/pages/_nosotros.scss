@@ -89,8 +89,7 @@
     display: flex;
     flex-direction: row; 
     scroll-snap-align: start; 
-    align-items: center;
-    justify-content: center;
+    @include justialign-center();
 
         &__2{
             @extend .nosotroscard;
