@@ -1,6 +1,6 @@
 /* HEADER */
 .header{
-
+    
     &__nav {
         display: flex;
         flex-direction: row;
@@ -28,6 +28,7 @@
     &__logo {
         width: 110px;
         transition: all .3s ease-in-out;
+        overflow: hidden;
             &:hover{
                 width: 125px;
             }

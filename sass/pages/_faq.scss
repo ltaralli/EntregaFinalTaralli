@@ -10,7 +10,7 @@
     background-size: cover;
     flex-direction: column;
     justify-content: space-around;
-    overflow: hidden;
+    overflow-x: hidden;
 
         &__rapper{
             overflow: hidden;
@@ -48,6 +48,7 @@
 /*  FAQ CONTAINER */
 
 .faq{
+    
 
     &__container {
         height: auto;
@@ -56,6 +57,7 @@
         background: rgb(255,255,255);
         align-items: center;
         justify-content: space-around;
+
     }
 
     &__modulo {
@@ -64,7 +66,6 @@
         width: 100%;
         border-radius: 15px;
         box-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
-        overflow: hidden;
     }
 
     &__preg {
