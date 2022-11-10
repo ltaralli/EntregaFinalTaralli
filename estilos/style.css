@@ -67,12 +67,12 @@ dl, ol, ul {
 .info {
   background-color: white; }
   .info__titular {
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 3rem;
     text-align: center;
     background-color: #f8fafa;
     box-shadow: 0 0 13px 0 #b9b9b9;
     font-size: 3.5em;
-    margin-bottom: 2rem; }
+    margin: 2rem 0; }
   .info__btnDiv {
     align-self: start;
     grid-column: 3 / 2; }
@@ -100,8 +100,9 @@ dl, ol, ul {
   justify-content: center;
   align-items: center; }
   .infocard:hover {
-    box-shadow: 0 0 13px 0 #b9b9b9;
-    transition: all .4s ease-in-out; }
+    box-shadow: 0 0 15px 0 rgba(83, 83, 83, 0.9);
+    transition: all .4s ease-in-out;
+    scale: 1.02; }
   .infocard_img {
     border-radius: 30px;
     height: 60%;
@@ -172,7 +173,8 @@ img.btn-whatsapp:hover {
   -webkit-box-shadow: 0px 0px 15px 0px #075e54;
   -moz-box-shadow: 0px 0px 15px 0px #075e54;
   box-shadow: 0px 0px 15px 0px #075e54;
-  transition-duration: 1s; }
+  transition-duration: 1s;
+  overflow: hidden; }
 
 /* HERO CONTACTO */
 .heroC {
@@ -397,7 +399,7 @@ textarea {
   box-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.75);
   transition: all .2s ease-in-out; }
   .producto:hover {
-    width: 93%;
+    scale: 1.03;
     box-shadow: 0 0 15px 0 rgba(139, 139, 139, 0.9); }
   .producto__img {
     height: 390px;
@@ -434,7 +436,10 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  overflow: hidden; }
+  .heroF__rapper {
+    overflow: hidden; }
   .heroF__titulo, .heroF__slogan {
     font-size: 4rem;
     font-family: "Marcellus", serif; }
@@ -467,13 +472,14 @@ textarea {
   background-color: #f8fafa;
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25); }
+  box-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
+  overflow: hidden; }
 
 .faq__preg, .faq__resp {
   font-family: "Assistant", sans-serif;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   text-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .faq__resp {
   font-size: 1.3rem; }
@@ -571,11 +577,16 @@ textarea {
 
 .footer__redes__logos {
   filter: invert(100%);
-  margin: 1rem; }
+  margin: 1rem;
+  transition: all .2s ease-in-out; }
+  .footer__redes__logos:hover {
+    filter: invert(62%) sepia(27%) saturate(610%) hue-rotate(301deg) brightness(96%) contrast(118%); }
 
 /* ---- INICIO RESPONSIVE  ----*/
 /*  MEDIA QUERY */
 @media screen and (min-width: 150px) and (max-width: 767px) {
+  .header__anchor:hover {
+    width: 110px; }
   .footer__nav {
     height: 120px; }
   .footer__logosmedios {

@@ -10,6 +10,11 @@
     background-size: cover;
     flex-direction: column;
     justify-content: space-around;
+    overflow: hidden;
+
+        &__rapper{
+            overflow: hidden;
+        }
 
         &__titulo{
             font-size: 4rem;
@@ -59,13 +64,14 @@
         width: 100%;
         border-radius: 15px;
         box-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
+        overflow: hidden;
     }
 
     &__preg {
-        font-family: $font-Assistant;
-        padding: 0.5rem 2rem;
-        text-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
-        font-size: 2.5rem;
+            font-family: "Assistant", sans-serif;
+            padding: 0.5rem 1rem;
+            text-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
+            font-size: 2rem;
     }
 
 

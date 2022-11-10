@@ -51,12 +51,12 @@
 
     
      &__titular {
-        padding: 3rem 2rem 2rem 2rem;
+        padding: 3rem;
         text-align: center;
         background-color: $color-card;
         box-shadow: $sombras-card;
         font-size: 3.5em;
-        margin-bottom: 2rem;
+        margin: 2rem 0;
     }
 
     &__btnDiv {
@@ -89,8 +89,9 @@
     flex-direction: column;
     @include justialign-center();
         &:hover{
-            box-shadow: $sombras-card;
+            box-shadow: 0 0 15px 0 rgba(83, 83, 83, 0.9);
             transition: all .4s ease-in-out;
+            scale: 1.02;
         }
 
         &_img {
@@ -199,4 +200,5 @@ img.btn-whatsapp {
     -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
     box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
     transition-duration: 1s;
+    overflow: hidden;
     } 

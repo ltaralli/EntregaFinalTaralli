@@ -69,6 +69,10 @@
     &__redes__logos{
         filter: invert(100%);
         margin: 1rem;
+        transition: all .2s ease-in-out;
+        &:hover{
+            filter: invert(62%) sepia(27%) saturate(610%) hue-rotate(301deg) brightness(96%) contrast(118%);
+        }
     }
 }
 
