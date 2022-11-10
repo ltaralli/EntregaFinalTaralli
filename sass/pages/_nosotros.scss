@@ -1,0 +1,126 @@
+ /* ----- NOSOTROS ------- */
+
+ .heroN__titulo, .nosotroscard__titulo{
+    font-family: $font-Assistant;
+}
+
+.heroN__slogan, .nosotroscard__desc{
+    font-family: $font-Marcellus;
+
+}
+
+/* HERO NOSOTROS */
+
+
+.heroN{
+    background-image: url(../img/background_nosotros.png);
+    height: 91vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @extend .nosotroscard;
+
+
+        &__container {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 91vh;
+        }
+
+        &__titulo{
+            font-size: 6rem;
+        }
+
+        &__titulo{
+            color: black;
+            margin: 1rem 3rem;
+            padding: 1rem 3rem;
+        }
+
+
+        &__slogan {
+            @extend .heroN__titulo;
+            font-size: 2rem;
+            text-align: initial;
+        }
+
+        &__div {
+            border-radius: 10%;
+            box-shadow: $sombras-card;
+        }
+
+
+        &__img {
+            @extend .heroN__div;
+            margin: 1.5rem;
+            max-height: 500px;
+            max-width: 500px;
+            border-radius: 40px;
+        }
+        
+        &__txt{
+            @extend .nosotroscard__txt;
+        }
+}
+/* FIN HERO NOSOTROS */ 
+
+/* NOSOTROS CARD */
+
+
+  .main__nosotros{
+    height: 77.7vh;
+    /* align-items: center; */
+    scroll-snap-type:  y mandatory;
+    overflow-y: scroll;
+
+        &::-webkit-scrollbar { 
+        /* solo oculta su visualizacion */
+        display: none;
+    }
+  }
+
+  .nosotroscard {
+    background-color: #e6e3ec;
+    height: 78vh;
+    box-shadow: $sombras-card;
+    display: flex;
+    flex-direction: row; 
+    scroll-snap-align: start; 
+    @include justialign-center();
+
+        &__2{
+            @extend .nosotroscard;
+         flex-direction: row-reverse;
+         background-color: #F5EDF0;
+        }
+
+        &__titulo{
+            text-align: center;
+            margin: 1rem 3rem;
+            padding: 1rem;
+            font-size: 2.5rem;
+        }
+
+        &__img {
+            max-width: 650px;
+            max-height: 650px;
+            border-radius: 15%;
+            margin: 2rem;
+            padding: 2rem;
+            object-fit: cover;
+        }
+
+        &__desc {
+            @extend .nosotroscard__titulo;
+            font-size: 2rem;
+        }
+
+        &__txt{
+            box-shadow: $sombras-card;
+            border-radius: 2rem;
+            margin: 2rem;
+        }
+    }

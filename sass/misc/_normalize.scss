@@ -1,0 +1,43 @@
+/*  NORMALIZE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+/*  DESREBOOT BOOTSTRAP */
+
+p{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+dl, ol, ul{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#navbarNav{
+    justify-content: flex-end;
+}
+
+.hero__titulo, .infocard__titulo, .info__titulo, .contactoHome__titulo, .fieldset__legend, .heroC__titulo{   
+    font-family: 'Marcellus', serif;
+}
+
+.hero__slogan, .infocard__desc, .contactoHome__desc, .heroC__slogan{
+    font-family: 'Assistant', sans-serif;
+}
+
+/* FONTS */
+.contactoHome__btn, .info__btn, .infocard__btn, .hero__btn, .header__anchor, .footer__anchor, .footer__nombre, .footer__ciudad{
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,92 @@
+/* HERO CONTACTO */
+.heroC  {
+    background-image: url(../img/hero_contacto.jpg);
+    color: white;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    @include justialign-center();
+
+    &__titulo{
+        text-align: center;
+        margin: .5rem auto  ;
+        text-shadow: 2px 2px black;
+        font-size: 5rem;
+    }
+
+    &__slogan{
+        @extend .heroC__titulo;
+        font-size: 1.5rem;
+        border-bottom: white solid 3px;
+        padding-bottom: 1rem;
+        box-shadow: 0px 2px black;
+    
+    }
+
+}
+
+
+
+/* FIN HERO CONTACTO */ 
+
+
+/* FIELDSET*/ 
+
+
+
+#mivideo {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-size: cover;
+}
+
+.form {
+    font-family: $font-Assistant;
+    font-size: 1.5rem;
+    height: 100vh;
+}
+
+.formcard {
+    background-color: $color-card;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: $sombras-card;
+    align-content: space-between;
+}
+
+.fieldset__legend {
+    text-align: center;
+    width: 100%;
+    background-color: #ecf1f4;
+    border-radius: 35px 35px 0px 0px;
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: $sombras-card;
+}
+
+textarea{
+        resize: none;
+    }
+
+.fieldset__btn {
+    display: inline-block;
+    padding: .7rem 0.5rem;
+    margin: 2rem;
+    text-align: center;
+    width: 20rem;
+    font-size: 1.2rem;
+}
+
+/* FIN FIELDSET*/
+    /* ---- FIN CONTACTO ---- */

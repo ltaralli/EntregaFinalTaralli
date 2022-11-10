@@ -1,0 +1,79 @@
+/* FOOTER*/
+.footer{
+
+    &__nav {
+        height: 100px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__medios {
+        margin: 1rem;
+    }
+
+    &__logosmedios {
+        width: 60px;
+        margin: 3px;
+    }
+
+    &__copyLocation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    &__logoLocation {
+        display: inline-block;
+        width: 17PX;
+        height: 25PX;
+        margin: -0.5rem 0;
+        filter: invert(100%);
+    }
+
+    &__txt{
+        color: white;
+        padding: .5rem ;
+       }
+       
+    &__txt-2{
+        display: inline-block;
+        margin: 1.5rem 0;
+    }
+
+    &__anchor{
+        color: white ; 
+        padding: 1rem 0.5rem;
+    }
+
+    &__anchor{
+        color: white ; 
+        padding: 1rem 0.5rem;
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: rgb(252, 140, 158);
+            border-bottom: rgb(252, 140, 158) solid 1px;
+        }
+    }
+
+
+    &__li{
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__redes__logos{
+        filter: invert(100%);
+        margin: 1rem;
+        transition: all .2s ease-in-out;
+        &:hover{
+            filter: invert(62%) sepia(27%) saturate(610%) hue-rotate(301deg) brightness(96%) contrast(118%);
+        }
+    }
+}
+
+

@@ -1,0 +1,204 @@
+/* HERO HOME*/
+.hero {
+    background-image: url(../img/heroHome.jpg);
+    color: white;
+    height: 91vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    @include justialign-center();
+
+
+    &__titulo {
+        text-align: center;
+        margin: .5rem auto  ;
+        text-shadow: 2px 2px black;
+        font-size: 4em;
+    }
+
+    &__slogan{
+        @extend .hero__titulo;
+        font-size: 2em;
+    }
+
+
+    &__btn {
+        padding: 1rem 0.2rem;
+        background-color: white;
+        border-radius: 2rem;
+        margin: 1rem;
+        width: 250px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .hero__btn:hover,  .contactoHome__btn:hover,  .fieldset__btn:hover{
+        background: pink;
+        color: black;
+        transition: all .5s ease;
+    }
+
+}
+
+/* FIN HERO HOME*/
+
+/* INFOCARD */
+
+.info{
+    background-color: white;
+
+    
+     &__titular {
+        padding: 3rem;
+        text-align: center;
+        background-color: $color-card;
+        box-shadow: $sombras-card;
+        font-size: 3.5em;
+        margin: 2rem 0;
+    }
+
+    &__btnDiv {
+        align-self: start;
+        grid-column: 3 / 2;
+    }
+    
+    &__btn {
+        padding: 1rem;
+        background-color: pink;
+        border-radius: 20px;
+        box-shadow: $sombras-card;
+    }
+}
+.tarjetasHome {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 80px;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.infocard {
+    background-color: $color-card;
+    padding: 1rem;
+    margin: 2rem 4rem;
+    border-radius: 30px;
+    box-shadow: $sombras-card;
+    display: flex;
+    flex-direction: column;
+    @include justialign-center();
+        &:hover{
+            box-shadow: 0 0 15px 0 rgba(83, 83, 83, 0.9);
+            transition: all .4s ease-in-out;
+            scale: 1.02;
+        }
+
+        &_img {
+            border-radius: 30px;
+            height: 60%;
+            width: 90%;
+            box-shadow: $sombras-card;
+            object-fit: cover;
+        }
+
+        &__titulo {
+            padding: 1rem;
+            font-size: 2rem; 
+            text-align: center;  
+        }
+
+        &__desc {
+            padding: 1rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        &__btn {
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+            background-color: pink;
+            text-align: center;
+            border-radius: 1.5rem;
+            box-shadow: $sombras-card;
+        }
+
+}
+
+.info__btn:hover, .infocard__btn:hover{
+    background-color: white;
+    transition: all .5s ease;
+}
+
+
+/* FIN INFOCARD */
+
+/* CONTACTO HOME*/
+
+.contactoHome{
+    background-color: #7C5869;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    @include justialign-center();
+
+
+        &__titulo{
+            font-size: 4em;
+        }
+
+        &__desc{
+            font-size: 1.3em;
+        }
+        &__titulo{
+            text-align: center;
+            margin: 1rem auto  ;
+            display: inline-block;
+            color: white;
+            text-shadow: 2px 1px 0 #000000;
+        }
+
+        &__desc{
+            @extend .contactoHome__titulo;
+        }
+
+        &__btn {
+            display: inline-block;
+            padding: 1rem;
+            margin-top: 1rem;
+            background-color: white;
+            bottom: 0;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        // &__btn:hover:{
+        //     @extend .infocard__btn:hover;
+        // }
+}
+
+    .fieldset__btn{
+        @extend .contactoHome__btn;
+    }
+
+/* FIN CONTACTO HOME*/
+
+/* whatsapp btn*/
+
+img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius:100px !important;
+    }
+    img.btn-whatsapp:hover{
+    border-radius:100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    transition-duration: 1s;
+    overflow: hidden;
+    } 

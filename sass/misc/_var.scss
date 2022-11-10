@@ -1,0 +1,13 @@
+$sombras-card: 0 0 13px 0 rgba(185,185,185,50%);
+$color-card: #f8fafa;
+
+$font-Marcellus: 'Marcellus', serif;
+$font-Assistant: 'Assistant', sans-serif;
+$font-Poppins: 'Poppins', sans-serif;
+
+
+
+@mixin justialign-center {
+    justify-content: center;
+    align-items: center;
+}

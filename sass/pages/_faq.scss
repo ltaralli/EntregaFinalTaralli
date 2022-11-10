@@ -1,0 +1,85 @@
+ /* ---- FAQ ----*/
+
+/*  FAQ HERO */
+.heroF {
+    background-image: url(../img/hero_faq.jpg);
+    color: white;
+    height: 65vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-x: hidden;
+
+        &__rapper{
+            overflow: hidden;
+        }
+
+        &__titulo{
+            font-size: 4rem;
+            font-family: $font-Marcellus;
+        }
+
+        &__titulo, {
+            padding: 1rem;
+            text-shadow: 2px 2px black
+        }
+
+        &__slogan{
+            @extend .heroF__titulo;
+            font-size: 2rem;
+            font-family: $font-Assistant;
+
+        }
+}
+.buscador {
+    width: 25rem;
+    height: 2rem;
+    margin: 1rem;
+    box-shadow: 2px 2px black;
+    border-radius: 8px
+}
+/*  FIN FAQ HERO */
+
+
+
+
+/*  FAQ CONTAINER */
+
+.faq{
+    
+
+    &__container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: rgb(255,255,255);
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    &__modulo {
+        margin: 1rem 0;
+        background-color: $color-card;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
+    }
+
+    &__preg {
+            font-family: "Assistant", sans-serif;
+            padding: 0.5rem 1rem;
+            text-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
+            font-size: 2rem;
+    }
+
+
+    &__resp{
+        @extend .faq__preg;
+        font-size: 1.3rem;
+     }
+
+}
+/*  FIN FAQ CONTAINER */
