@@ -13,16 +13,18 @@
 
 
 .heroN{
-    background-image: url(../img/background_nosotros.png);
+    // background-image: url(../img/background_nosotros.png);
     height: 91vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     @extend .nosotroscard;
 
+    
+
 
         &__container {
-            color: white;
+            background-color: #F5E5FC;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -31,34 +33,34 @@
         }
 
         &__titulo{
-            font-size: 6rem;
-        }
-
-        &__titulo{
-            color: black;
+            text-align: center;
             margin: 1rem 3rem;
-            padding: 1rem 3rem;
+            padding: 1rem;
+            font-size: 2.3em;
+            font-family: 'Poppins', sans-serif; 
         }
 
 
         &__slogan {
             @extend .heroN__titulo;
-            font-size: 2rem;
-            text-align: initial;
+            font-size: 1.8em;
         }
 
         &__div {
             border-radius: 10%;
-            box-shadow: $sombras-card;
+            margin: 0 1rem;
+            box-shadow: $sombras-card-black;
+            background-color: $color-card
         }
 
 
         &__img {
             @extend .heroN__div;
-            margin: 1.5rem;
-            max-height: 500px;
-            max-width: 500px;
-            border-radius: 40px;
+                margin: 1.5rem;
+                height: 50vh;
+                width: 22vw;
+                border-radius: 40px;
+                object-fit: cover;
         }
         
         &__txt{
@@ -71,7 +73,7 @@
 
 
   .main__nosotros{
-    height: 77.7vh;
+    height: 91vh;
     /* align-items: center; */
     scroll-snap-type:  y mandatory;
     overflow-y: scroll;
@@ -83,44 +85,34 @@
   }
 
   .nosotroscard {
-    background-color: #e6e3ec;
-    height: 78vh;
-    box-shadow: $sombras-card;
+    background-color: #D0D6B3;
+    height: 91vh;
     display: flex;
     flex-direction: row; 
     scroll-snap-align: start; 
     @include justialign-center();
 
+
         &__2{
             @extend .nosotroscard;
          flex-direction: row-reverse;
-         background-color: #F5EDF0;
+         background-color: #AAAE7F;
         }
 
         &__titulo{
-            text-align: center;
-            margin: 1rem 3rem;
-            padding: 1rem;
-            font-size: 2.5rem;
+            @extend .heroN__titulo;
         }
 
-        &__img {
-            max-width: 650px;
-            max-height: 650px;
-            border-radius: 15%;
-            margin: 2rem;
-            padding: 2rem;
-            object-fit: cover;
-        }
 
         &__desc {
-            @extend .nosotroscard__titulo;
-            font-size: 2rem;
+            @extend .heroN__titulo;
+            @extend .heroN__slogan;
         }
 
         &__txt{
-            box-shadow: $sombras-card;
             border-radius: 2rem;
             margin: 2rem;
+            box-shadow: $sombras-card-black;
+            background-color: $color-card;
         }
     }
