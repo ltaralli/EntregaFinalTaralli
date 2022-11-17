@@ -72,6 +72,7 @@
         transition: all .2s ease-in-out;
         &:hover{
             filter: invert(62%) sepia(27%) saturate(610%) hue-rotate(301deg) brightness(96%) contrast(118%);
+            scale: 1.2;
         }
     }
 }

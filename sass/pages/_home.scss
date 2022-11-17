@@ -60,7 +60,7 @@
     }
 
     &__btnDiv {
-        align-self: start;
+        align-self: center;
         grid-column: 3 / 2;
     }
     
@@ -125,13 +125,17 @@
 
 }
 
-.info__btn:hover, .infocard__btn:hover, .contactoHome__btn:hover{
-    background-color: rgba(1, 71, 120, 0.65);
-    transition: all .3s ease;
-    color: white;
-    scale: 1.15;
+.info__btn:hover {
+    @include btn-hover-blue;
 }
 
+.infocard__btn:hover{
+    @include btn-hover-blue;
+}
+
+.contactoHome__btn:hover{
+    @include btn-hover-blue;
+}
 
 /* FIN INFOCARD */
 
@@ -199,4 +203,5 @@ img.btn-whatsapp {
         box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
         transition-duration: 1s;
         overflow: hidden;
+        scale: 1.09;
     } 

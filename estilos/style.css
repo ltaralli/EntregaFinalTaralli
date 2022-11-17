@@ -27,7 +27,7 @@ dl, ol, ul {
   font-family: 'Assistant', sans-serif; }
 
 /* FONTS */
-.contactoHome__btn, .contactoHome .fieldset__btn, .info__btn, .infocard__btn, .hero__btn, .header__anchor, .footer__anchor, .footer__nombre, .footer__ciudad {
+.contactoHome__btn, .contactoHome .fieldset__btn, .info__btn, .infocard__btn, .fieldset__btn, .hero__btn, .header__anchor, .footer__anchor, .footer__nombre, .footer__ciudad {
   font-family: 'Poppins', sans-serif; }
 
 /* HERO HOME*/
@@ -74,7 +74,7 @@ dl, ol, ul {
     font-size: 3.5em;
     margin: 2rem 0; }
   .info__btnDiv {
-    align-self: start;
+    align-self: center;
     grid-column: 3 / 2; }
   .info__btn {
     padding: 1rem;
@@ -117,7 +117,7 @@ dl, ol, ul {
     padding: 1rem;
     font-size: 1.5rem;
     text-align: center; }
-  .infocard__btn {
+  .infocard__btn, .fieldset__btn {
     padding: 1rem 2rem;
     margin-top: 1rem;
     background-color: pink;
@@ -125,7 +125,19 @@ dl, ol, ul {
     border-radius: 1.5rem;
     box-shadow: 0 0 13px 0 #b9b9b9; }
 
-.info__btn:hover, .infocard__btn:hover, .contactoHome__btn:hover, .contactoHome .fieldset__btn:hover {
+.info__btn:hover {
+  background-color: rgba(1, 71, 120, 0.65);
+  transition: all .3s ease;
+  color: white;
+  scale: 1.15; }
+
+.infocard__btn:hover, .fieldset__btn:hover {
+  background-color: rgba(1, 71, 120, 0.65);
+  transition: all .3s ease;
+  color: white;
+  scale: 1.15; }
+
+.contactoHome__btn:hover, .contactoHome .fieldset__btn:hover {
   background-color: rgba(1, 71, 120, 0.65);
   transition: all .3s ease;
   color: white;
@@ -176,7 +188,8 @@ img.btn-whatsapp:hover {
   -moz-box-shadow: 0px 0px 15px 0px #075e54;
   box-shadow: 0px 0px 15px 0px #075e54;
   transition-duration: 1s;
-  overflow: hidden; }
+  overflow: hidden;
+  scale: 1.09; }
 
 /* HERO CONTACTO */
 .heroC {
@@ -245,8 +258,9 @@ textarea {
   padding: .7rem 0.5rem;
   margin: 2rem;
   text-align: center;
-  width: 20rem;
-  font-size: 1.2rem; }
+  width: 16vw;
+  font-size: 1.2rem;
+  scale: 1.05; }
 
 /* FIN FIELDSET*/
 /* ---- FIN CONTACTO ---- */
@@ -569,7 +583,8 @@ textarea {
   margin: 1rem;
   transition: all .2s ease-in-out; }
   .footer__redes__logos:hover {
-    filter: invert(62%) sepia(27%) saturate(610%) hue-rotate(301deg) brightness(96%) contrast(118%); }
+    filter: invert(62%) sepia(27%) saturate(610%) hue-rotate(301deg) brightness(96%) contrast(118%);
+    scale: 1.2; }
 
 /* ---- INICIO RESPONSIVE  ----*/
 /*  MEDIA QUERY */
@@ -639,7 +654,7 @@ textarea {
     .infocard__desc {
       font-size: .7em;
       padding: 0; }
-    .infocard__btn {
+    .infocard__btn, .fieldset__btn {
       font-size: .5em;
       padding: .5rem;
       margin: 0;
@@ -658,10 +673,10 @@ textarea {
   .contactoHome {
     height: 150px; }
     .contactoHome__titulo, .contactoHome__desc {
-      font-size: 1.2em;
+      font-size: 1.8em;
       margin: 0.5rem auto; }
     .contactoHome__desc {
-      font-size: .5em;
+      font-size: .8em;
       margin: 0.5rem auto; }
     .contactoHome__btn, .contactoHome .fieldset__btn {
       font-size: .5em;

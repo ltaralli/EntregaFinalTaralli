@@ -6,6 +6,13 @@ $font-Marcellus: 'Marcellus', serif;
 $font-Assistant: 'Assistant', sans-serif;
 $font-Poppins: 'Poppins', sans-serif;
 
+@mixin btn-hover-blue {
+    background-color: rgba(1, 71, 120, 0.65);
+    transition: all .3s ease;
+    color: white;
+    scale: 1.15;  
+} 
+
 
 
 @mixin justialign-center {

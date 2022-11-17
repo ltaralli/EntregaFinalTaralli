@@ -28,14 +28,9 @@
 
 }
 
-
-
 /* FIN HERO CONTACTO */ 
 
-
 /* FIELDSET*/ 
-
-
 
 #mivideo {
     min-width: 100%;
@@ -80,12 +75,15 @@ textarea{
     }
 
 .fieldset__btn {
+    @extend .infocard__btn;
     display: inline-block;
     padding: .7rem 0.5rem;
     margin: 2rem;
     text-align: center;
-    width: 20rem;
+    width: 16vw;
     font-size: 1.2rem;
+    scale: 1.05;
+     
 }
 
 /* FIN FIELDSET*/
