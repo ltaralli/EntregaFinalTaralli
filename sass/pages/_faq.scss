@@ -42,9 +42,6 @@
 }
 /*  FIN FAQ HERO */
 
-
-
-
 /*  FAQ CONTAINER */
 
 .faq{
@@ -57,9 +54,7 @@
         background: rgb(255,255,255);
         align-items: center;
         justify-content: space-around;
-
     }
-
     &__modulo {
         margin: 1rem 0;
         background-color: $color-card;
@@ -67,15 +62,12 @@
         border-radius: 15px;
         box-shadow: 0 0 13px 0 rgba(185, 185, 185, .25);
     }
-
     &__preg {
             font-family: "Assistant", sans-serif;
             padding: 0.5rem 1rem;
             text-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.25);
             font-size: 2rem;
     }
-
-
     &__resp{
         @extend .faq__preg;
         font-size: 1.3rem;
