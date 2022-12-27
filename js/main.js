@@ -1,74 +1,70 @@
-let index= prompt ("Bienvenido/a a Flecha Cangreja! \n ¿Qué producto deseas comprar? Ingresá la opción que corresponda \n 1 - Dijes \n 2 - Pulseras \n 0 - Salir");
-
-if (index != "0") {
-
-    switch (index) {
-        case "1": 
-        let producDijes= prompt("Estos dijes tenemos para vos: \n 1 - Corazon de acero quirurjico \n 2 - Oreo (para compartir) \n Ingresa 0 para salir");
-        
-            switch (producDijes){
-                case "1":
-                    alert("Te solicitamos los siguientes datos para ponernos en contacto:");
-                    let nombreCompadorCorazon=prompt("Ingresá tu nombre por favor");
-                    let mailCompradorCorazon= prompt("Ingresá tu correo por favor");
-                    alert("En minutos te llegará el formulario al mail " + mailCompradorCorazon);
-                    console.log( "El comprador es " + nombreCompadorCorazon + " y su email es " + mailCompradorCorazon);   
-                break;
-
-                case "2":
-                    alert("Te solicitamos los siguientes datos para ponernos en contacto:");
-                    let nombreCompadorOreo=prompt("Ingresá tu nombre por favor");
-                    let mailCompradorOreo= prompt("Ingresá tu correo por favor");
-                    alert("En minutos te llegará el formulario al mail " + mailCompradorOreo);
-                    console.log( "El comprador es " + nombreCompadorOreo + " y su email es " + mailCompradorOreo);
-                break;
-
-                case "0":
-                    alert("Te esperamos en una proxima oportunidad. Saludos!");
-                break;
-
-                default:
-                    alert("Ingresa una opción correcta");
-                break;
-            }
-            break;
-
-            case "2":
-                let producPulsera= prompt("Estas pulseras tenemos para vos: \n 1 - Contra la envidia (hilo rojo) \n 2 - Minimalista de Acero Quirurgico \n Ingresa 0 para salir");
-
-                switch (producPulsera){
-                    case "1":
-                        alert("Te solicitamos los siguientes datos para ponernos en contacto:");
-                        let nombreCompadorPulEnvid=prompt("Ingresá tu nombre por favor");
-                        let mailCompradorCPulEnvid= prompt("Ingresá tu correo por favor");
-                        alert("En minutos te llegará el formulario al mail " + mailCompradorCPulEnvid);
-                        console.log( "El comprador es " + nombreCompadorPulEnvid + " y su email es " + mailCompradorCPulEnvid);
-                        
-                    break;
-
-                    case "2":
-                        alert("Te solicitamos los siguientes datos para ponernos en contacto:");
-                        let nombreCompadorPulMinim=prompt("Ingresá tu nombre por favor");
-                        let mailCompradorCPulMinim= prompt("Ingresá tu correo por favor");
-                        alert("En minutos te llegará el formulario al mail " + mailCompradorCPulMinim);
-                        console.log( "El comprador es " + nombreCompadorPulMinim + " y su email es " + mailCompradorCPulMinim);
-            
-                    break;
-
-                    case "0":
-                        alert("Te esperamos en una proxima oportunidad. Saludos!");
-                        break;
-
-                    default:
-                        alert("Ingresa una opción correcta");
-                        break;
-                }
-            break;
-
-            default:
-                alert("Ingresa una opción correcta");
-            break;
-        
-}
-}
-alert("Te esperamos en una proxima oportunidad. Saludos!");
+const productos = [
+    {nombre: "Pulsera Roja", precio: 400 },
+    {nombre: "Dije para compartir", precio: 350 },
+    {nombre: "Piedra amatista", precio: 1500 },
+    {nombre: "Collar", precio: 300 },
+    {nombre: "sahumerios", precio: 250},
+  ]
+ 
+ let carrito = []
+ 
+ let seleccion = alert("Bienvenido a Flecha Cangreja")
+ 
+ while (seleccion != "si" && seleccion != "no"){
+   seleccion = prompt ("Desea comprar algun articulo? \n - SI \n - NO")
+ }
+ 
+ if(seleccion == "si"){
+   alert("Te mostramos nuestros productos")
+    let todoslosProductos = productos.map ((producto) => producto.nombre + " $" + producto.precio); 
+    alert(todoslosProductos.join("\n"))
+ } else if (seleccion == no){ 
+   alert("Te esperamos en una proxima oportunidad")
+ }
+ 
+ while(seleccion != "no"){ 
+   let producto = prompt("Ingresá el producto a adquirir")
+   let precio = 0
+ 
+   if(producto == "pulsera roja" || producto == "dije para compartir" || producto == "piedra amatista" || producto == "collar" || producto == "sahumerios") {
+     switch(producto) {
+       case "pulsera roja":
+         precio = 400;
+         break;
+       case "dije para compartir":
+         precio = 350;
+         break;
+       case "piedra amatista":
+         precio = 1500;
+         break;
+       case "collar":
+          precio = 300;
+         break;
+       case "sahumerios":
+         precio = 250;
+         break;
+       default:
+         break;
+     }
+   let unidades = parseInt(prompt("Cuantas unidades desea?"))
+ 
+   carrito.push({producto, unidades, precio})
+   console.log(carrito);
+   } else {
+     alert("Producto invalido, por favor reingresa el elemento")
+   }
+ 
+   seleccion = prompt("Desea agragar mas productos? \n - SI \n - NO")
+   
+   while(seleccion === "no"){
+     alert("Ya prepararemos su pedido!")
+     carrito.forEach((carritoFinal) => {
+       console.log(`producto: ${carritoFinal.producto}, unidades: ${carritoFinal.unidades}, total a pagar por producto $ ${carritoFinal.unidades * carritoFinal.precio}`);
+     })
+     break;
+   }
+ }
+ 
+ const total = carrito.reduce((acc, el) => acc + el.precio * el.unidades, 0)
+ 
+ alert(`El monto total de la compra es: $${total}. Muchas gracias!`)
