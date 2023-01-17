@@ -124,4 +124,26 @@
             margin-bottom: 1rem;
         }
     }
+
+    .offcanvas-contenedor{
+        display: flex;;
+        align-items: center;
+        gap: 2rem   ;
+    }
+
+    .img-carrito{
+        width: 170px;
+        height: 135px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 0 13px 0 rgba(185, 185, 185, .75);
+        margin: .5rem .5rem 0 .5rem;
+
+    }
+
+    .header__carrito{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 /* FIN GRID PRODUCTOS */

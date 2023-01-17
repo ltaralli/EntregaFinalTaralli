@@ -428,6 +428,24 @@ textarea {
     padding: .6rem;
     margin-bottom: 1rem; }
 
+.offcanvas-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 2rem; }
+
+.img-carrito {
+  width: 170px;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 13px 0 rgba(185, 185, 185, 0.75);
+  margin: .5rem .5rem 0 .5rem; }
+
+.header__carrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 /* FIN GRID PRODUCTOS */
 /* ---- FAQ ----*/
 /*  FAQ HERO */
@@ -521,8 +539,26 @@ textarea {
 .header__item {
   display: inline-block; }
 
+.header__carritoImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  background-position: center;
+  margin: 0 1em 0 2rem; }
+
+.header .header__carrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 .header .navbar-nav {
   align-items: center; }
+
+.header .header__carritoCont {
+  font-size: 1.2em;
+  background-color: pink;
+  border-radius: 6px;
+  padding: .2rem .3rem; }
 
 /* FIN HEADER */
 /* FOOTER*/
