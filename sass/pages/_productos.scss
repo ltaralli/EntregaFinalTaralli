@@ -125,12 +125,7 @@
         }
     }
 
-    .offcanvas-contenedor{
-        display: flex;;
-        align-items: center;
-        gap: 2rem   ;
-    }
-
+    
     .img-carrito{
         width: 170px;
         height: 135px;
@@ -138,12 +133,29 @@
         border-radius: 10px;
         box-shadow: 0 0 13px 0 rgba(185, 185, 185, .75);
         margin: .5rem .5rem 0 .5rem;
-
+        
     }
-
+    
     .header__carrito{
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+    
+    
+    
+    .offcanvas-contenedor{
+        display: flex;;
+        align-items: center;
+        gap: 2rem   ;
+    }
+
+    .offcanvas__textH{
+        font-family: $font-Poppins;
+        font-size: 1.2em;
+    }
+
+    .offcanvas__textP{
+        font-family: $font-Assistant;
     }
 /* FIN GRID PRODUCTOS */

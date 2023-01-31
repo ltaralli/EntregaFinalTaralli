@@ -1,0 +1,72 @@
+[
+    {
+       "id":1,
+       "nombre":"Amatista",
+       "precio":2500,
+       "img":"../img/amatista.jpeg",
+       "cantidad":1
+    },
+    {
+       "id":2,
+       "nombre":"Paleta Glitter",
+       "precio":1200,
+       "img":"../img/glitterPaleta.jpg",
+       "cantidad":1
+    },
+    {
+       "id":3,
+       "nombre":"Hornitos",
+       "precio":1800,
+       "img":"../img/hornos.jpg",
+       "cantidad":1
+    },
+    {
+       "id":4,
+       "nombre":"Llavero para dos",
+       "precio":850,
+       "img":"../img/llaveros.jpg",
+       "cantidad":1
+    },
+    {
+       "id":5,
+       "nombre":"Porta Sahumerios",
+       "precio":950,
+       "img":"../img/portaasahumerios_mano.jpg",
+       "cantidad":1
+    },
+    {
+       "id":6,
+       "nombre":"Difusores",
+       "precio":1250,
+       "img":"../img/nosotroscard4.jpg",
+       "cantidad":1
+    },
+    {
+       "id":7,
+       "nombre":"Atrapasueños",
+       "precio":1600,
+       "img":"../img/atrapasueños.jpg",
+       "cantidad":1
+    },
+    {
+       "id":8,
+       "nombre":"Balsamo",
+       "precio":1250,
+       "img":"../img/balsamo.jpg",
+       "cantidad":1
+    },
+    {
+       "id":9,
+       "nombre":"Polvo de hadas",
+       "precio":1250,
+       "img":"../img/polvo_de_hadas2.jpg",
+       "cantidad":1
+    },
+    {
+       "id":10,
+       "nombre":"Pulsera p/ 2",
+       "precio":850,
+       "img":"../img/pulseras.jpg",
+       "cantidad":1
+    }
+ ]

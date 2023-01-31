@@ -57,22 +57,87 @@
 
 <main>
 
+
+  <!-- MODAL -->
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">TEST
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">CHECK OUT</h1>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carrito" class="form-group table-responsive">
+          <table class="table" id="lista-compra">
+              <thead>
+                  <tr>
+                    <th class="offcanvas__textH" scope="col">Imagen</th>
+                    <th class="offcanvas__textH" scope="col">Articulo</th>
+                    <th class="offcanvas__textH" scope="col">Cantidad</th>
+                    <th class="offcanvas__textH" scope="col">Precio</th>
+                    <th class="offcanvas__textH text-end" scope="col">Sub Total</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <!-- CONTENIDO DINAMICO -->
+              </tbody>
+            </table>
+            <div class="d-flex justify-content-end offcanvas__textH m-3">TOTAL $
+              <p id="totalProceso"></p>
+            </div>
+          </div>
+          <form id="procesar-pago">
+            <div class="mb-3 offcanvas__textH">
+              <label class="fieldset__label form-label" for="name">Nombre y Apellido</label>
+              <input class="fieldset__imput form-control" type="text" name="name" id="name" required placeholder="Introduzca su nombre">
+            </div>
+            <div class="mb-3 offcanvas__textH">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required placeholder="Introduzca su correo">
+            </div>
+            <div class="mb-3 offcanvas__textH">
+              <label class="fieldset__label" for="phone">Teléfono</label>
+              <input class="fieldset__imput form-control" type="phone" name="phone" id="phone" required placeholder="Introduzca su teléfono">
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-md-2">
+                <input type="submit" class="btn btn-success btn-block" id="button" value="Finalizar compra" >
+              </div>
+            </div>
+          </form>
+          <div class="disabled" id="spinner">
+            <div class="loading"></div>
+          </div>    
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- OFFCANVAS -->
       <div class="offcanvas offcanvas-end width: 800px" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compras</h5>
+          <h5 class="fs-4 offcanvas__textH" id="offcanvasRightLabel">Carrito de compras</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <!-- CONTENIDO DINAMICO -->
         </div>
-        <span>Precio total: $</span>
+        <div class="offcanvas__textH d-flex justify-content-start ms-2">
+        <span> Precio total: $</span>
         <p class="text-center" id="precioTotal"></p>
-        <div class="fot">
-          <button type="button" class="btn btn-danger" id="vaciarCarrito">
+        </div>
+        <div class="fot d-flex ">
+          <button type="button" class="btn btn-danger m-2" id="vaciarCarrito">
             Limpiar carrito
           </button>
-          <button type="button" id="procesarCompra" class="btn btn-primary">
+          <button type="button" id="procesarCompra" class="btn btn-primary m-2">
             Continuar compra
           </button>
         </div>
@@ -146,7 +211,7 @@
         <section class="contactoHome">
             <h2 class="contactoHome__titulo"data-aos="zoom-in-up" >CONTACTO</h2>
             <p class="contactoHome__desc"data-aos="zoom-in-up" >Obtené mas informacion completando tus datos, te contactaremos lo antes posible</p>
-            <a class="contactoHome__btn" data-aos="zoom-in-up" href="./vistas/contacto.html">CONTACTANOS</a>
+            <a class="contactoHome__btn" data-aos="zoom-in-up" href="./contacto.html">CONTACTANOS</a>
         </section>
         <div>
             <img class="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" width="64" height="64" alt="Whatsapp" onclick="window.location.href='https://wa.me/5493436463473'">
