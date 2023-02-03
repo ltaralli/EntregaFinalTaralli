@@ -73,27 +73,28 @@ let stockProductos = [
 
 
 const grillaProductos = document.querySelector('#grilla__productos');
-const contadorCarrito = document.querySelector('.header__carritoCont');
 const vaciarCarrito = document.querySelector('#vaciarCarrito');
+const formulario = document.querySelector('#procesar-pago')
 const precioTotal = document.querySelector('#precioTotal');
 const procesarCompra = document.querySelector('#procesarCompra');
 const totalProceso = document.querySelector('#totalProceso');
-const formulario = document.querySelector('#procesar-pago')
+const contadorCarrito = document.querySelector('.header__carritoCont');
 
 let carrito = [];
 
+// EVENTOS
 document.addEventListener('DOMContentLoaded', () => {
   carrito = JSON.parse(localStorage.getItem('carrito')) || []
   mostrarCarrito()
 } )
 
-formulario.addEventListener('submit', enviarPedido)
+formulario.addEventListener('submit', 
+enviarPedido)
 
 vaciarCarrito.addEventListener('click', () => {
 carrito.length = [];
 eliminarCarrito()
 })
-
 
 // SE PINTAN LOS PRODUCTOS EN EL DOM
 fetch('../data/data.json')
@@ -113,9 +114,11 @@ fetch('../data/data.json')
   })
 
 
-  
 })
 
+
+
+// BTN CONTINUAR COMPRA EN EL OFFCANVAS 
 if (procesarCompra) {
   procesarCompra.addEventListener("click", () => {
     if (carrito.length === 0) {
@@ -126,7 +129,6 @@ if (procesarCompra) {
         confirmButtonText: "Aceptar",
       });
     } else {
-      // console.log(procesarCompra)
       Swal.fire({
         title: 'Quiere finalizar la compra?',
         showDenyButton: true,
@@ -145,64 +147,8 @@ if (procesarCompra) {
   });
 }
 
-function eliminarCarrito() {
-  const swalWithBootstrapButtons = Swal.mixin({
-    customClass: {
-      confirmButton: 'btn btn-success',
-      cancelButton: 'btn btn-danger'
-    },
-    buttonsStyling: false
-  })
-  swalWithBootstrapButtons.fire({
-    title: 'Eliminar carrito?',
-    text: "Perderas todos tus productos!",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonText: 'BORRAR',
-    cancelButtonText: 'CANCELAR',
-    reverseButtons: true
-  }).then((result) => {
-    if (result.isConfirmed) {
-      carrito.length = []
-      mostrarCarrito()
-      swalWithBootstrapButtons.fire(
-        'Carrito Eliminado!',
-        'Todos tus productos fueron borrados',
-        'success'
-      )
-    } else if (
-      result.dismiss === Swal.DismissReason.cancel
-    ) {
-      swalWithBootstrapButtons.fire(
-        'Cancelado',
-        'Seguis contando con tus productos en el carrito',
-        'error'
-      )
-    }
-  })
-}
 
-vaciarCarrito.addEventListener('click', () => {
-eliminarCarrito()
-})
-
-function agregarProducto(id) {
-  const agregado = carrito.some(prod => prod.id == id)
-  if (agregado){
-    const prod = carrito.map(prod => {
-      if (prod.id === id){
-        prod.cantidad++
-      }
-    })
-  } else {
-      const item = stockProductos.find((prod) => prod.id === id )
-      carrito.push(item)
-      console.log(carrito); 
-    }
-    mostrarCarrito()
-}
-
-
+// MODAL CHECK OUT
 const mostrarCarrito = () => {
 const modalBody = document.querySelector('.offcanvas-body')
 
@@ -235,6 +181,60 @@ const modalBody = document.querySelector('.offcanvas-body')
   
 }
 
+
+
+// FUNCIONES
+function eliminarCarrito() {
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-success',
+      cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+  })
+  swalWithBootstrapButtons.fire({
+    title: 'Eliminar carrito?',
+    text: "Perderas todos tus productos!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'BORRAR',
+    cancelButtonText: 'CANCELAR',
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      carrito.length = []
+      mostrarCarrito()
+      swalWithBootstrapButtons.fire(
+        'Carrito Eliminado!',
+        'Todos tus productos fueron borrados',
+        'success'
+      )
+    } else if (
+      result.dismiss === Swal.DismissReason.cancel
+    ) {
+      swalWithBootstrapButtons.fire(
+        'Cancelado',
+        'Seguis contando con tus productos en el carrito',
+      )
+    }
+  })
+}
+
+function agregarProducto(id) {
+  const agregado = carrito.some(prod => prod.id == id)
+  if (agregado){
+    const prod = carrito.map(prod => {
+      if (prod.id === id){
+        prod.cantidad++
+      }
+    })
+  } else {
+      const item = stockProductos.find((prod) => prod.id === id )
+      carrito.push(item)
+      console.log(carrito); 
+    }
+    mostrarCarrito()
+}
 
 function eliminarProducto(id) {
   const productId = id;
